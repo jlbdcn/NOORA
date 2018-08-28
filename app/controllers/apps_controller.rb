@@ -7,6 +7,7 @@ class AppsController < ApplicationController
       @apps = App.all
     else
       @apps = App.all
+    end
   end
 end
 
