@@ -1,0 +1,77 @@
+<div class="app-show__wrapper">
+  <div class="container app-show">
+    <div class="row">
+
+      <div class="col-xs-4  ">
+        <div class="app-show__side">
+          <div class="app-show__logo-wrap app-show__logo" style="background-image: url('<%= @app.logo_url %>');">
+          </div>
+            <%= link_to "Add to favourite", "#", class: "button app-show__button" %>
+
+            <%= link_to "More Information", "#", class: "button-grey app-show__button" %>
+
+        </div>
+
+      </div>
+
+      <div class="col-xs-8 ">
+        <div class="app-show__main">
+
+          <h1 class="app-show__heading"><%= @app.name %></h1>
+
+          <p class="app-show__category">Category: <%= @app.category&.name %></p>
+
+          <p class="app-show__price">
+            Price:
+            <%= link_to "Free", "#", class: "app-show__price-link" %>
+          </p>
+
+          <p class="app-show__description"></p>
+
+          <%= image_tag "https://cdn.vox-cdn.com/thumbor/JB8REiNjTmvnU0_L7aQbnnL4jsY=/0x0:5205x3470/1820x1213/filters:focal(2187x1319:3019x2151):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60364845/vpavic_180713_2741_0017.0.jpg", class: "app-show__image" %>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--      <div class="show-logo">
+        <div class="logo" style="background-image: url('<%= @app.logo %>'); height: 400px;">
+        </div>
+      </div>
+
+
+      <div class="show-favourite">
+        <input type="submit" name="commit" value="Add to favourite" class="btn btn-primary" data-disable-with="Book">
+      </div>
+
+      <div class="show-information">
+        <input type="submit" name="commit" value="More information" class="btn btn-info" data-disable-with="Book">
+      </div> -->
+
+
+
+
+      <!--       <div class="app-show__main">
+              <div class="name">
+                <h1><%= @app.name %></h1>
+              </div>
+            </div>
+
+
+            <div class="category">
+              <p><b>Category:</b> <%= @app.category.name %></p>
+            </div>
+
+
+            <div class="description">
+              <p><%= @app.description %></p>
+            </div> -->
