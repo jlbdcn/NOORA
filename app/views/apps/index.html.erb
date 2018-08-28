@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 titre">
+      <h2>FROM OUR PICKS </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col header-app-number" >
+      <p> We found <%= @apps.count %> apps that may interest you.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <% @apps.each do |app| %>
+
+      <div class="col-md-3 col-sm-4 col-xs-6">
+        <div class="app-card">
+          <div class="image-container">
+            <div class="app-card-image" style="background-image:linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.1)), url('<%= app.logo %>')">
+            </div>
+          </div>
+          <div class="app-card-content">
+            <div class="app-card-name">
+              <h4><%= app.name %></h4>
+            </div>
+            <div class="app-card-description cut-text">
+              <p> <%= app.description[0..80] %>...</p>
+            </div>
+          </div>
+          <hr>
+          <div class="icons-container">
+            <div class="bookmarks-icon">
+              <i class="fas fa-bookmark"></i>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
