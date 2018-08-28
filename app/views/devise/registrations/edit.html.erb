@@ -24,7 +24,11 @@
                       placeholder: "username" %>
 
           <%= f.input :avatar,
-                      file: true %>
+                      label: false %>
+          <label for="file-upload" class="custom-file-upload">
+              <i class="fa fa-cloud-upload"></i> upload avatar
+          </label>
+          <input id="file-upload" type="file"/>
 
           <%= f.input :password,
                       hint: "leave it blank if you don't want to change it",
