@@ -1,0 +1,45 @@
+.app-card {
+  width: 100%;
+  margin: .5rem 0 1rem 0;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+    &:hover {
+    box-shadow: 0 0.5px 0.5px 0 rgba(0,0,0,0.1), 0 0.5px 1px 0 rgba(0,0,0,0.1), 0 1px 0.5px -2px rgba(0,0,0,0.1);
+    background-color: #E0E0E0;
+     .image-container {
+      background-color: white;
+     }
+   };
+}
+
+.app-card-image {
+  height: 150px;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.app-card-content {
+  width: 100%;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.icons-container {
+  display: flex;
+  max-height: 70px;
+  width: 100%;
+  margin-left: 15px;
+  margin-bottom: 15px
+}
+
+hr {
+  margin: 10px;
+}
+
+
+
+
