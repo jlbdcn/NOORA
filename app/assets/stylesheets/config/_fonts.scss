@@ -14,3 +14,34 @@ $headers-font: "Oswald", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
+
+.h1 {
+  font-size: 90px;
+  letter-spacing: 5px;
+  color: $black;
+}
+
+.h2 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  color: $black;
+}
+
+.h3 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  color: $black;
+}
+
+.h4 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: $black;
+}
+
+.h5 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+}
