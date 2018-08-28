@@ -1,5 +1,6 @@
 class AppsController < ApplicationController
   before_action :set_app, only: [:show]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def show
   end
