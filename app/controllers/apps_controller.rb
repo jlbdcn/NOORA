@@ -3,12 +3,22 @@ class AppsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @apps = App.all
+    if params[:category].present?
+      @apps = App.where(category: params[:category])
+    elsif params[:query].present?
+      @apps = App.all
+    else
+      @apps = App.all
+    end
   end
 
   def show
+    @bookmark = Bookmark.new
   end
 
+  def favorite
+    @apps = current_user.apps
+  end
 
   private
 

@@ -1,14 +1,15 @@
 <div class="app-show__wrapper">
   <div class="container app-show">
-    <div class="row">
+    <div class="row app-show__main-container">
 
-      <div class="col-xs-4  ">
+      <div class="col-xs-4">
         <div class="app-show__side">
           <div class="app-show__logo-wrap app-show__logo" style="background-image: url('<%= @app.logo_url %>');">
           </div>
-            <%= link_to "Add to favourite", "#", class: "button app-show__button" %>
-
-            <%= link_to "More Information", "#", class: "button button-grey app-show__button" %>
+            <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button" do %>
+              Add to favorite
+            <% end %>
+            <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
 
         </div>
 
@@ -25,6 +26,7 @@
             Price:
             <%= link_to "Free", "#", class: "app-show__price-link" %>
           </p>
+          <p><%= @app.description %></p>
 
           <p class="app-show__description"></p>
 

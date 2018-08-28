@@ -5,6 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :bookmarks
   has_many :apps, through: :bookmarks
-
   mount_uploader :avatar, AvatarUploader
+  validates :username, uniqueness: true
 end
