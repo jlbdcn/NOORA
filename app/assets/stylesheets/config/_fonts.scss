@@ -16,26 +16,26 @@ $headers-font: "Oswald", "Helvetica", "sans-serif";
 // $my-font: "Font Name";
 
 .h1 {
-  font-size: 90px;
+  font-size: 75px !important;
   letter-spacing: 5px;
   color: $dark-gray;
 }
 
 .h2 {
-  font-size: 36px;
+  font-size: 36px !important;
   letter-spacing: 5px;
   color: $dark-gray;
 }
 
 .h3 {
-  font-size: 36px;
+  font-size: 36px !important;
   letter-spacing: 5px;
   color: $dark-gray;
 }
 
 .h4 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 20px !important;
   letter-spacing: 5px;
   color: $dark-gray;
 }
@@ -43,5 +43,5 @@ $headers-font: "Oswald", "Helvetica", "sans-serif";
 .h5 {
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 20px !important;
 }
