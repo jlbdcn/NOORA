@@ -9,13 +9,6 @@
             <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button" do %>
               Add to favorite
             <% end %>
-            <%= form_tag [@app, @bookmark], method: "post" do %>
-              <%= button_tag class: "button app-show__button" do %>
-                Add to favorite
-              <% end %>
-            <% end %>
-            <%= link_to "Add to favourite", "#", class: "button app-show__button" %>
-
             <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
 
         </div>

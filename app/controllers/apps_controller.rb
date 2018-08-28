@@ -16,6 +16,9 @@ class AppsController < ApplicationController
     @bookmark = Bookmark.new
   end
 
+  def favorite
+    @apps = current_user.apps
+  end
 
   private
 
