@@ -4,5 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :bookmarks
-  has_many :applications, through: :bookmarks
+  has_many :apps, through: :bookmarks
 end
