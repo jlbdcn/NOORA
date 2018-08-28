@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_28_114050) do
+ActiveRecord::Schema.define(version: 2018_08_28_192459) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "app_tags", force: :cascade do |t|
+    t.bigint "app_id"
+    t.bigint "tag_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["app_id"], name: "index_app_tags_on_app_id"
+    t.index ["tag_id"], name: "index_app_tags_on_tag_id"
+  end
 
   create_table "apps", force: :cascade do |t|
     t.string "name"
@@ -41,6 +50,12 @@ ActiveRecord::Schema.define(version: 2018_08_28_114050) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "tags", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -55,6 +70,8 @@ ActiveRecord::Schema.define(version: 2018_08_28_114050) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "app_tags", "apps"
+  add_foreign_key "app_tags", "tags"
   add_foreign_key "apps", "categories"
   add_foreign_key "bookmarks", "apps"
   add_foreign_key "bookmarks", "users"

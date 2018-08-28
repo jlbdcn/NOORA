@@ -6,7 +6,7 @@ class AppsController < ApplicationController
     if params[:category].present?
       @apps = App.where(category: params[:category])
     elsif params[:query].present?
-      @apps = App.all
+      @apps = App.search_by_tag_and_category(params[:query])
     else
       @apps = App.all
     end
