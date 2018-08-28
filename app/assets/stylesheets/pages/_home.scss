@@ -1,16 +1,11 @@
 .home-container {
   // Position
-  height: calc(100vh - 70px);
   width: 100%;
 
   // Div action
   display: flex;
   align-items: center;
   justify-content: center;
-
-  // Colors & fonts
-  background-color: $main;
-  color: $dark-gray;
 }
 
 .leitmotiv {
