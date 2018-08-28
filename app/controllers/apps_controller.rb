@@ -13,6 +13,7 @@ class AppsController < ApplicationController
   end
 
   def show
+    @bookmark = Bookmark.new
   end
 
 
