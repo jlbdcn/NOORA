@@ -1,1 +1,35 @@
-// Specific CSS for your home-page
+.home-container {
+  // Position
+  width: 100%;
+
+  // Div action
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leitmotiv {
+  //position & taille
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  //cancel the marge of the text
+  h1{
+    margin: 0px !important;
+  }
+  //adapt the button
+  .button {
+    //Position
+    margin-top: 30px;
+    width:100%;
+
+    //font
+    font-weight: bold;
+  }
+}
+
+.mock-up {
+  margin-bottom: 50px;
+}

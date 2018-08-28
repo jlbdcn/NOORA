@@ -1,0 +1,70 @@
+.form {
+  background-image: linear-gradient(-220deg, #4FC4B6, #93F9B9);
+  margin-top: 35px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  h1 {
+    text-align: center;
+    color: white;
+  }
+}
+
+.form-button {
+  background-color: white;
+  color: $green;
+  font-weight: bold;
+  width: 100%;
+}
+
+.form-inputs {
+    color: white;
+    opacity: 0.9;
+    ::-webkit-input-placeholder {
+      color: white;
+    }
+  .form-control {
+    border-color: transparent;
+    box-shadow: none;
+    background-image: linear-gradient(to right, #5abc9f, #6fcca0);
+    color: white;
+  }
+  .form-control:focus {
+    border: 2px solid #d3ffff;
+  }
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  .form-check-label {
+    font-weight: normal;
+  }
+}
+.form-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: white;
+  }
+}
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: white;
+  color: $green;
+  border: none;
+  margin-bottom: 15px;
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+.text-muted {
+    color: white;
+}
+
