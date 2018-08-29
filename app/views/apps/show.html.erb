@@ -26,11 +26,29 @@
             Price:
             <%= link_to "Free", "#", class: "app-show__price-link" %>
           </p>
-          <p><%= @app.description %></p>
 
-          <p class="app-show__description"></p>
+          <p class="app-show__description"><%= @app.description %></p>
 
           <%= image_tag "https://cdn.vox-cdn.com/thumbor/JB8REiNjTmvnU0_L7aQbnnL4jsY=/0x0:5205x3470/1820x1213/filters:focal(2187x1319:3019x2151):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60364845/vpavic_180713_2741_0017.0.jpg", class: "app-show__image" %>
+          <%= simple_form_for [@app, @review] do |f| %>
+            <% if @review.errors.any? %>
+              <div class="errors-container">
+                <ul>
+                  <% @review.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
+            <%= f.input :content, label: false, placeholder: "write your review..."  %>
+            <%= f.input :rating, label: false, placeholder: "rating" %>
+            <%= f.submit "Post your review", class: "button"  %>
+          <% end %>
+          <% if @reviews %>
+            <% @reviews.each do |review| %>
+              <%= review.content  %>
+            <% end %>
+          <% end %>
 
         </div>
       </div>
