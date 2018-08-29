@@ -1,45 +1,85 @@
+
 .app-card {
   width: 100%;
+  height: 320px;
   margin: .5rem 0 1rem 0;
   border-radius: 3px;
   background-color: white;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0.5px 0.5px 0 rgba(0,0,0,0.1), 0 0.5px 1px 0 rgba(0,0,0,0.1), 0 1px 0.5px -2px rgba(0,0,0,0.1);
+
     &:hover {
-    box-shadow: 0 0.5px 0.5px 0 rgba(0,0,0,0.1), 0 0.5px 1px 0 rgba(0,0,0,0.1), 0 1px 0.5px -2px rgba(0,0,0,0.1);
-    background-color: #E0E0E0;
-     .image-container {
-      background-color: white;
-     }
-   };
-}
+     .app-card-image {
+        transition: 0.2s all ease-out;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        z-index: 1
+      }
+
+     .app-card-content {
+        background-image: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(255,255,255,.8));
+        transition: 0.2s all ease-out;
+        width: 100%;
+        height: 320px;
+        background-color: transparent;
+        position: relative;
+        z-index: 2;
+       }
+
+      .short-description {
+        display: none;
+      }
+      .long-description {
+        display: inline;
+      }
+      .icons-container {
+         display: inline;
+         position: absolute;
+         top: 5px;
+         left: 5px;
+         z-index: 3
+      }
+      .app-card-name {
+        padding-top: 10px;
+      }
+    }
+  }
+
+    a {
+      text-decoration: none;
+    }
 
 .app-card-image {
-  height: 150px;
+  height: 200px;
   width: 100%;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 3px 3px 0 0;
 }
 
 .app-card-content {
   width: 100%;
   font-size: 14px;
-  padding: 15px;
-}
-
-.icons-container {
-  display: flex;
-  max-height: 70px;
-  width: 100%;
-  margin-left: 15px;
-  margin-bottom: 15px
+  padding: 10px;
+  color: black;
 }
 
 hr {
   margin: 10px;
 }
 
+.long-description {
+  display: none;
+}
 
-
-
+.icons-container {
+  display: none;
+}
