@@ -12,7 +12,9 @@
         <div class="app-card__fav">
           <div class="app-card__hidden">
             <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
-              <span class="little-button left"> Remove </span>
+              <div class="little-button left">
+                Remove
+              </div>
             <% end %>
           <%= link_to "Infos",app_path(app), class: "little-button right" %>
           </div>
