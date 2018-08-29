@@ -1,0 +1,33 @@
+.review {
+  border-bottom: 1px solid lightgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.image-wrapper {
+  height: 100%;
+}
+
+.review__avatar {
+  width: 100%;
+  border-radius: 50%;
+
+}
+
+.review__button {
+  border: none;
+  margin-bottom: 30px;
+
+}
+
+.review__content {
+  margin: 0px;
+}
+
+.review__user {
+  margin: 0px;
+}
+
+.stars-wrapper {
+  margin: 5px 0px;
+}

@@ -1,0 +1,20 @@
+
+<div class="review">
+  <div class="row">
+    <div class="col-xs-2 image-wrapper">
+      <%= cl_image_tag review.user.avatar, class: "review__avatar" %>
+    </div>
+
+    <div class="col-xs-10">
+      <p class="review__user"><%= review.user.username %></p>
+      <div class="stars-wrapper">
+        <% review.rating.times do %>
+          <i class="fas fa-star"></i>
+        <% end %>
+      </div>
+
+      <p class="review__content"><%= review.content %></p>
+    </div>
+  </div>
+
+</div>
