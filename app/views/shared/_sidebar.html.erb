@@ -14,13 +14,11 @@
         </li>
       <% end %>
       <% Category.all.each do |category| %>
-        <%= link_to apps_path do %>
           <li>
             <%= link_to apps_path(category: category.name) do %>
-              <i class="fas fa-magic"></i><span class="sidebar__category-name"><%= category.name %></span>
+              <i class="fas fa-magic"></i><div class="sidebar__category-name"><%= category.name %></div>
             <% end %>
           </li>
-        <% end %>
       <% end %>
     </ul>
   <div class="sidebar__search">

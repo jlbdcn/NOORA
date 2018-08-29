@@ -10,10 +10,13 @@
   color: black;
   height: 100vh;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  transition: all 0.2s ease;
+  transition: width 0.2s ease;
   a {
-    decoration: none;
+    text-decoration: none;
     color: black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
   }
   ul {
     list-style: none;
@@ -28,8 +31,9 @@
   }
   &:hover {
     width: 270px;
+    box-shadow: 3px 0 20px rgba(0,0,0,0.2);
     .sidebar__category-name {
-      display: inline;
+      visibility: visible;
     }
     .sidebar__logo-hovered {
       display: inline;
@@ -53,43 +57,51 @@
 
 .sidebar__category-name {
   margin-left: 10px;
-  display: none;
+  visibility: hidden;
+  white-space: nowrap;
 }
 
 .sidebar__logo-hovered {
+  transition: display 2s ease 1s;
   display: none;
 }
 
 .sidebar__search {
   height: 70px;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease 0.2s;
   display: none;
   align-items: center;
   position: absolute;
   top: calc(100vh - 70px);
+  width: 100%
 }
 
 .sidebar__search-bar {
   margin: 0px 30px;
   border: 1px solid #c9c9c9;
   border-radius: 25px;
-  padding: 0px 20px;
+  padding: 0px 10px;
   display: flex;
+  font-size: 14px;
+  color: #c9c9c9;
   i {
-    margin-top: 10px;
-    color: #c9c9c9
+    margin-top: 13px;
   }
 }
 
 .sidebar__search-bar-input {
   border: none;
+  background-color: transparent;
   box-shadow: none;
+  padding: 0px;
   font-size: 14px;
+  text-align: center;
   &:focus {
     border: none;
     box-shadow: none;
   }
+  margin-right: 10px;
 }
 
 .sidebar__favorite {
