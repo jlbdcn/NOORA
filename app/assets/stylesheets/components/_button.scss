@@ -15,3 +15,26 @@
     box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
   }
 }
+
+
+.little-button {
+  //position et prop.
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //visuel
+  background: white;
+  color: $gray;
+  font-size: 12px;
+  border-radius: 50px;
+
+  //hover
+  &:hover {
+    text-decoration: none;
+    box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
+  }
+}
+
+

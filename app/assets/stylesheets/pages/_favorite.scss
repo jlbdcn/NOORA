@@ -1,18 +1,54 @@
 .app-card__fav {
+  //taille et fonction
+  width: 100%;
+  margin: .5rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
 
+  // design
+  border-radius: 3px;
+
+  // Apparition partie transparente
+  &:hover{
+    .app-card__hidden{
+      visibility: visible;
+    }
+  }
+}
+
+// Propriété des boutons cache
+.app-card__hidden{
+
+  visibility: hidden;
+  width:150px;
+
+  display: flex;
+  justify-content: space-around;
+  font-size: 10px !important;
+
+  margin-bottom: 5px;
+
+  .left{
+    margin-right: 5px;
+  }
+  .right{
+    margin-left:5px;
+  }
+}
+
+// Propriété de la carte logo
+.app-card__visible {
   // Position
   width:150px;
   height:150px;
   padding: 15px;
 
   //Propriété
-
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   // Visuel effet
-
   background: white;
   border-radius: 5px;
   background-color: white;
@@ -22,19 +58,12 @@
 
   // Hover effect
   &:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.22);
 
   }
 }
 
-.hidden{
-  display:flex;
-  justify-content: space-between;
-}
-
-
-
-
+// Propriete de l'image
 .app-card-image {
   height: 135px;
   width: auto;
@@ -44,21 +73,4 @@
   border-radius: 5px;
 }
 
-.app-card-content {
-  width: 100%;
-  font-size: 14px;
-  padding: 15px;
-}
-
-.icons-container {
-  display: flex;
-  max-height: 70px;
-  width: 100%;
-  margin-left: 15px;
-  margin-bottom: 15px
-}
-
-hr {
-  margin: 10px;
-}
 
