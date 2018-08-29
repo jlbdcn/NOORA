@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <div class="sidebar__logo">
+    <%= link_to root_path do %>
+      <span class="sidebar__logo-unhovered"><%= image_tag "NOORA_logo_small.png", height: 50 %></span>
+      <span class="sidebar__logo-hovered"><%= image_tag "NOORA_logo.png", height: 50 %></span>
+    <% end %>
+  </div>
+  <% Category.all.each do |category| %>
+    <ul>
+      <li>
+        <%= link_to apps_path do %>
+          <i class="fas fa-magic"></i><span class="sidebar__category-name"><%= category.name %></span>
+        <% end %>
+      </li>
+    </ul>
+  <% end %>
+  <div class="sidebar__search">
+    <%= form_tag apps_path, class: "sidebar__search-bar", method: :get do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control form-search",
+        placeholder: "Find an app..."
+      %>
+    <% end %>
+  </div>
+</div>
