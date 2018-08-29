@@ -10,9 +10,7 @@
               Add to favorite
             <% end %>
             <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
-
         </div>
-
       </div>
 
       <div class="col-xs-8 ">
@@ -26,15 +24,34 @@
             Price:
             <%= link_to "Free", "#", class: "app-show__price-link" %>
           </p>
-          <p><%= @app.description %></p>
 
-          <p class="app-show__description"></p>
+          <p class="app-show__description"><%= @app.description %></p>
 
           <%= image_tag "https://cdn.vox-cdn.com/thumbor/JB8REiNjTmvnU0_L7aQbnnL4jsY=/0x0:5205x3470/1820x1213/filters:focal(2187x1319:3019x2151):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60364845/vpavic_180713_2741_0017.0.jpg", class: "app-show__image" %>
 
+          <%= simple_form_for [@app, @review] do |f| %>
+            <% if @review.errors.any? %>
+              <div class="errors-container">
+                <ul>
+                  <% @review.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                  <% end %>
+                </ul>
+              </div>
+            <% end %>
+            <p>Rating</p>
+            <%= f.input :rating, label: false, placeholder: "rating" %>
+            <p>Description</p>
+            <%= f.input :content, label: false, placeholder: "write your review..."  %>
+            <%= f.submit "Post your review", class: "button review__button"  %>
+          <% end %>
+          <% if @reviews %>
+            <% @reviews.each do |review| %>
+              <%= render 'shared/review', review: review %>
+            <% end %>
+          <% end %>
         </div>
       </div>
-
     </div>
   </div>
 </div>
