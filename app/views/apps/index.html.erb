@@ -1,42 +1,45 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12 titre">
-      <h2>FROM OUR PICKS </h2>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col header-app-number" >
-      <p> We found <%= @apps.count %> apps that may interest you.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <% @apps.each do |app| %>
-
-      <div class="col-xs-12 col-sm-6">
-        <%= link_to app_path(app) do %>
-          <div class="app-card">
-            <div class="icons-container">
-              <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon" do %>
-                <i class="fas fa-bookmark"></i>
-              <% end %>
-            </div>
-            <div class="app-card-image" style="background-image: url('<%= app.logo %>')">
-            </div>
-            <div class="app-card-content">
-              <div class="app-card-name">
-                <h4><%= app.name %></h4>
-              </div>
-              <div class="app-card-description cut-text">
-                <p class="short-description"> <%= app.description[0..90] %>...</p>
-                <p class="long-description"> <%= app.description[0..1550] %>...</p>
-              </div>
-            </div>
-
-          <% end %>
-        </div>
+<div class="main-container">
+  <div class="sidebar-container"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 titre">
+        <h2>FROM OUR PICKS </h2>
       </div>
-    <% end %>
+    </div>
+
+    <div class="row">
+      <div class="col header-app-number" >
+        <p> We found <%= @apps.count %> apps that may interest you.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <% @apps.each do |app| %>
+
+        <div class="col-xs-12 col-sm-6">
+          <%= link_to app_path(app) do %>
+            <div class="app-card">
+              <div class="icons-container">
+                <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon" do %>
+                  <i class="fas fa-bookmark"></i>
+                <% end %>
+              </div>
+              <div class="app-card-image" style="background-image: url('<%= app.logo %>')">
+              </div>
+              <div class="app-card-content">
+                <div class="app-card-name">
+                  <h4><%= app.name %></h4>
+                </div>
+                <div class="app-card-description cut-text">
+                  <p class="short-description"> <%= app.description[0..90] %>...</p>
+                  <p class="long-description"> <%= app.description[0..1550] %>...</p>
+                </div>
+              </div>
+
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
