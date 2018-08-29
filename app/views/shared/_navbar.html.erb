@@ -1,7 +1,9 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "NOORA_logo.png", height: 50 %>
+    <% unless controller_name == 'apps' && action_name == 'index' || controller_name == 'apps' && action_name == 'favorite' || controller_name == 'apps' && action_name == 'show' %>
+      <%= image_tag "NOORA_logo.png", height: 50 %>
+    <% end %>
   <% end %>
 
   <!-- Right Navigation -->

@@ -4,7 +4,7 @@ class AppsController < ApplicationController
 
   def index
     if params[:category].present?
-      @apps = App.where(category: params[:category])
+      @apps = App.joins(:category).where(categories: { name: params[:category] })
     elsif params[:query].present?
       @apps = App.search_by_tag_and_category(params[:query])
     else
