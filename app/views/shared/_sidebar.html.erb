@@ -1,26 +1,39 @@
-<div class="sidebar">
+<div class="sidebar sidebar__sticky">
   <div class="sidebar__logo">
     <%= link_to root_path do %>
       <span class="sidebar__logo-unhovered"><%= image_tag "NOORA_logo_small.png", height: 50 %></span>
       <span class="sidebar__logo-hovered"><%= image_tag "NOORA_logo.png", height: 50 %></span>
     <% end %>
   </div>
-  <% Category.all.each do |category| %>
     <ul>
-      <li>
+      <% if user_signed_in? %>
+        <li class="sidebar__favorite">
+          <%= link_to favorite_apps_path do %>
+             <i class="fas fa-heart"></i><span class="sidebar__category-name">Favorite</span>
+          <% end %>
+        </li>
+      <% end %>
+      <% Category.all.each do |category| %>
         <%= link_to apps_path do %>
-          <i class="fas fa-magic"></i><span class="sidebar__category-name"><%= category.name %></span>
+          <li>
+            <%= link_to apps_path(category: category.name) do %>
+              <i class="fas fa-magic"></i><span class="sidebar__category-name"><%= category.name %></span>
+            <% end %>
+          </li>
         <% end %>
-      </li>
+      <% end %>
     </ul>
-  <% end %>
   <div class="sidebar__search">
-    <%= form_tag apps_path, class: "sidebar__search-bar", method: :get do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control form-search",
-        placeholder: "Find an app..."
-      %>
-    <% end %>
+    <div class="sidebar__search-bar">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <%= form_tag apps_path, method: :get do %>
+        <%= text_field_tag :query,
+          params[:query],
+          autocomplete: :off,
+          class: "form-control form-search sidebar__search-bar-input",
+          placeholder: "Find an app..."
+        %>
+      <% end %>
+    </div>
   </div>
 </div>

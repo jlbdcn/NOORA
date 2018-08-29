@@ -10,7 +10,7 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% if current_page?(controller: 'apps') && current_page?(action: 'index') || current_page?(action:'favorite') %>
+    <% if controller_name == 'apps' && action_name == 'index' || controller_name == 'apps' && action_name == 'favorite' || controller_name == 'apps' && action_name == 'show' %>
       <%= render 'shared/sidebar' %>
     <% end %>
     <%= render 'shared/navbar' %>

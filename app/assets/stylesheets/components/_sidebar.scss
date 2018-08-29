@@ -1,5 +1,5 @@
-body {
-  position: relative;
+.sidebar__sticky {
+  position: fixed !important;
 }
 
 .sidebar {
@@ -11,13 +11,17 @@ body {
   height: 100vh;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
   transition: all 0.2s ease;
+  a {
+    decoration: none;
+    color: black;
+  }
   ul {
     list-style: none;
     padding: 0px;
   }
   li {
-    padding-left: 0px;
     padding: 15px 25px;
+    padding-right: 0px;
     &:hover {
       background-color: #e8ebed;
     }
@@ -67,6 +71,27 @@ body {
 }
 
 .sidebar__search-bar {
-  margin: 0px 20px;
-  border-radius: 50%;
+  margin: 0px 30px;
+  border: 1px solid #c9c9c9;
+  border-radius: 25px;
+  padding: 0px 20px;
+  display: flex;
+  i {
+    margin-top: 10px;
+    color: #c9c9c9
+  }
+}
+
+.sidebar__search-bar-input {
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.sidebar__favorite {
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
 }
