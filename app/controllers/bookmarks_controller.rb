@@ -10,5 +10,11 @@ class BookmarksController < ApplicationController
     end
   end
 
+  def destroy
+    @bookmark = Bookmark.find(params[:id])
+    @bookmark.destroy
+    redirect_to favorite_apps_path
+  end
+
   private
 end

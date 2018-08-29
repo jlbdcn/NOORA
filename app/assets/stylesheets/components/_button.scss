@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
   height: 40px;
   background: $brand-gradient;
   color: #FFF;
@@ -15,3 +14,28 @@
     box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
   }
 }
+
+
+.little-button {
+  //position et prop.
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //visuel
+  background: white;
+  color: $gray;
+  font-size: 12px;
+  border-radius: 50px;
+    text-decoration: none;
+
+  //hover
+  &:hover {
+    color:$gray;
+    box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
+  }
+}
+
+

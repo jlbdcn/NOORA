@@ -6,28 +6,23 @@
   </div>
 
   <div class="row">
+    <!-- Favorite apps -->
     <% @apps.each do |app| %>
-
-      <div class="col-md-3 col-sm-4 col-xs-6">
-        <%= link_to app_path(app) do %>
-          <div class="app-card">
-            <div class="image-container">
-              <div class="app-card-image" style="background-image:linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.1)), url('<%= app.logo %>')">
+      <div class="col-xs-6 col-sm-4 col-md-2">
+        <div class="app-card__fav">
+          <div class="app-card__hidden">
+            <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
+              <div class="little-button left">
+                Remove
               </div>
-            </div>
-            <div class="app-card-content">
-              <div class="app-card-name">
-                <h4><%= app.name %></h4>
+            <% end %>
+          <%= link_to "Infos",app_path(app), class: "little-button right" %>
+          </div>
+          <%= link_to app.webpage_url do %>
+            <div class="app-card__visible">
+              <div class="app-card-image" style="background-image: url('<%= app.logo %>')">
+>>>>>>> master
               </div>
-              <div class="app-card-description">
-                <p> <%= app.description[0..80] %>...</p>
-              </div>
-            </div>
-            <hr>
-            <div class="icons-container">
-              <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon" do %>
-                <i class="fas fa-bookmark"></i>
-              <% end %>
             </div>
           <% end %>
         </div>

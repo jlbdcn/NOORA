@@ -3,15 +3,17 @@ class App < ApplicationRecord
   belongs_to :category
   has_many :bookmarks
   has_many :app_tags
+  has_many :reviews, dependent: :destroy
   has_many :tags, through: :app_tags
   mount_uploader :logo, LogoUploader
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
   validates :description, presence: true
   validates :logo, presence: true
   validates :webpage_url, presence: true
 
   pg_search_scope :search_by_tag_and_category,
+    against: [ :name, :description ],
     associated_against: {
       tags: :name,
       category: :name
@@ -26,3 +28,4 @@ class App < ApplicationRecord
     category.name if category
   end
 end
+

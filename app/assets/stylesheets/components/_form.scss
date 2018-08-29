@@ -52,7 +52,6 @@ input[type="file"] {
     display: none;
 }
 .custom-file-upload {
-  border: 1px solid #ccc;
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
@@ -81,4 +80,27 @@ input[type="file"] {
 .invalid-feedback {
   margin-left: 2px;
   font-size: 16px;
+}
+
+.form-check-label {
+  padding: 6px 12px;
+  background-color: white;
+  color: $green;
+  border: none;
+  margin-bottom: 15px;
+  font-weight: normal;
+  margin-left: 2px;
+  opacity: 0.5;
+  &:checked {
+    opacity: 1;
+  }
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+  margin: -23px;
+}
+
+input[type=checkbox]:checked + label {
+  opacity: 1;
 }
