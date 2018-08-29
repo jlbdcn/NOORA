@@ -14,6 +14,8 @@ class AppsController < ApplicationController
 
   def show
     @bookmark = Bookmark.new
+    @reviews = @app.reviews
+    @review = Review.new
   end
 
   def favorite
