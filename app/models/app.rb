@@ -5,6 +5,7 @@ class App < ApplicationRecord
   has_many :app_tags
   has_many :reviews, dependent: :destroy
   has_many :tags, through: :app_tags
+  has_many :app_screens
   mount_uploader :logo, LogoUploader
 
   validates :name, presence: true, uniqueness: true

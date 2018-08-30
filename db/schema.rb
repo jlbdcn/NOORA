@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_29_095000) do
+ActiveRecord::Schema.define(version: 2018_08_30_085055) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "app_screens", force: :cascade do |t|
+    t.string "url"
+    t.string "description"
+    t.bigint "app_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["app_id"], name: "index_app_screens_on_app_id"
+  end
 
   create_table "app_tags", force: :cascade do |t|
     t.bigint "app_id"
@@ -81,6 +90,7 @@ ActiveRecord::Schema.define(version: 2018_08_29_095000) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "app_screens", "apps"
   add_foreign_key "app_tags", "apps"
   add_foreign_key "app_tags", "tags"
   add_foreign_key "apps", "categories"
