@@ -1,6 +1,6 @@
 <% apps.each do |app| %>
   <div class="col-xs-6 col-sm-4 col-md-2">
-    <%= link_to app.webpage_url do %>
+    <%= link_to app.webpage_url, target: "_blank" do %>
       <!-- boite principale -->
       <div class="app-card__fav">
         <!-- background box -->
@@ -17,3 +17,5 @@
         </div>
       </div>
     <% end %>
+  </div>
+<% end %>
