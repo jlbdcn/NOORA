@@ -81,7 +81,24 @@
     border: none;
   }
 
+.carousel-button {
+    display: flex;
+    justify-content: center;
 
+  .button{
+    border: none !important;
+    height: 25px;
+    margin: 0 10px;
+
+    font-family: 'Oswald';
+    font-size: 15px;
+
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
 
 
 
