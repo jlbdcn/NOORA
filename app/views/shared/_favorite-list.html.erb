@@ -1,0 +1,20 @@
+<% apps.each do |app| %>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <div class="app-card__fav">
+      <div class="app-card__hidden">
+        <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
+          <div class="little-button left">
+            Remove
+          </div>
+        <% end %>
+      <%= link_to "Infos",app_path(app), class: "little-button right" %>
+      </div>
+      <%= link_to app.webpage_url, target: "_blank" do %>
+        <div class="app-card__visible">
+          <div class="app-card-image" style="background-image: url('<%= app.logo %>')">
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

@@ -15,7 +15,7 @@ Category.delete_all
 
 #Create categories
 project_management = Category.create!(
-  name: "Projekt Management"
+  name: "Project Management"
 )
 
 automation = Category.create!(
