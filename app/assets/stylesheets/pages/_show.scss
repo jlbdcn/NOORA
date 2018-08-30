@@ -1,3 +1,5 @@
+
+
 .app-show__wrapper {
   background-color: #F4F7F6;
   width: 100%;
@@ -5,15 +7,16 @@
   .app-show__main-container {
     display: flex;
   }
+
   .app-show__side {
     color: rgb(30, 30, 30);
     display: flex;
     justify-content: center;
     flex-direction: column;
-    display: flex;
     align-items: center;
     position: sticky !important;
-    top: 70px !important;
+    top: 100px !important;
+    margin-top: 30px;
   }
 
   .app-show__logo {
@@ -29,12 +32,12 @@
 
   .app-show__button{
     margin-bottom: 15px;
-    width: 220px;
+    width: 210px;
     height: 50px;
   }
 
   .button-grey {
-    background: #C4C4C4
+    background: #C4C4C4;
   }
 
 

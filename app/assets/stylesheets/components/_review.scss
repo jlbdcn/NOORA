@@ -3,14 +3,18 @@
   border-bottom: 1px solid lightgray;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 14px;
 }
 
-.image__wrapper {
-  height: 100%;
+.review-header {
+  display: flex;
 }
 
 .review__avatar {
-  width: 100%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
   border-radius: 50%;
 }
 
@@ -23,7 +27,8 @@
 }
 
 .review__content {
-  margin: 0px;
+  margin-top: 10px;
+  margin-left: 3px;
 }
 
 .review__created_at {
@@ -35,6 +40,7 @@
   margin-bottom: 30px;
   background: #C4C4C4;
   color: white;
+  font-size: 12px;
 }
 
 .submit-btn-wrapper {
