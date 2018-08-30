@@ -50,16 +50,26 @@
 
   .app-show__category {
     color: rgb(25, 25, 25);
+    margin-bottom: 0px;
+    margin-top: 30px;
 
+  }
+
+  .price-average-wrapper {
+    display: flex;
+    flex-direction: row;
+    .average {
+      margin-left: 30px;
+    }
   }
 
   .app-show__price {
     color: rgb(25, 25, 25);
+    text-decoration: none;
+  }
 
-    a {
-      color: blue;
-      text-decoration: none;
-    }
+  .app-show__description {
+    margin-top: 10px;
   }
 
   .app-show__image {
@@ -70,3 +80,8 @@
     margin-bottom: 30px;
     border: none;
   }
+
+
+
+
+

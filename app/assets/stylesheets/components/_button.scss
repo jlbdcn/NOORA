@@ -18,24 +18,17 @@
 
 .little-button {
   //position et prop.
-  height: auto;
-  width: auto;
+  height: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 
   //visuel
-  background: white;
-  color: $gray;
+  background: $light-gray;
+  color: white;
   font-size: 12px;
-  border-radius: 50px;
-    text-decoration: none;
-
-  //hover
-  &:hover {
-    color:$gray;
-    box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
-  }
+  text-decoration: none;
+  border: 1px solid white;
 }
 
 
