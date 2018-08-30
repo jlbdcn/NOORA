@@ -58,12 +58,13 @@
       .app-card-name {
         padding-top: 10px;
       }
+      a {
+        text-decoration: none;
+      }
     }
   }
 
-    a {
-      text-decoration: none;
-    }
+
 
 .app-card-image {
   height: 200px;
