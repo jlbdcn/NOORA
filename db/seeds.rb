@@ -6,11 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Delete all previous data
+AppScreen.delete_all
 Bookmark.delete_all
 User.delete_all
 App.delete_all
 Category.delete_all
 
+#Create categories
 project_management = Category.create!(
   name: "Projekt Management"
 )
@@ -47,6 +50,7 @@ development = Category.create!(
   name: "Development"
 )
 
+# Create apps
 App.create!(
   name: "todoist",
   description: "Life can feel overwhelming, but it doesn’t have to. Todoist lets you keep track of everything in one place, so you can get it all done and enjoy more peace of mind along the way.",
@@ -633,5 +637,21 @@ App.create!(
   webpage_url: "https://www.hellobonsai.com/",
   category: legal
 )
+
+# Add screens
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535619995/JIRA_screenshot_1.png",
+  description: "Plan and Track",
+  app: App.find_by_name("JIRA")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535619998/JIRA_screenshot_2.png",
+  description: "Release and Report",
+  app: App.find_by_name("JIRA")
+)
+
+
+
 
 
