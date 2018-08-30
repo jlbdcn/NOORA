@@ -8,10 +8,22 @@
   flex: 1 1 auto;
 }
 
+ .app-card-title {
+    h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
+ }
+.short-description {
+  font-size: 12px;
+}
+
 .app-card {
-  width: 100%;
-  height: 320px;
-  margin: .5rem 0 1rem 0;
+  max-width: 510px;
+  min-width: 255;
+  max-height: 282px;
+  min-height: 141;
+  margin: 10px 20px;
   border-radius: 3px;
   background-color: white;
   display: flex;
@@ -22,21 +34,20 @@
 
     &:hover {
      .app-card-image {
-        transition: 0.2s all ease-out;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         width: 100%;
-        height: 320px;
+        height: 282px;
         position: absolute;
         z-index: 1
       }
 
      .app-card-content {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,.8), rgba(255,255,255,.8));
-        transition: 0.2s all ease-out;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,.9), rgba(255,255,255,.9));
         width: 100%;
         height: 320px;
+        padding: 0 30px;
         background-color: transparent;
         position: relative;
         z-index: 2;
@@ -46,8 +57,10 @@
         display: none;
       }
       .long-description {
-        display: inline;
+        opacity: 1;
+        transition: 0.4s all ease;
       }
+
       .icons-container {
          display: inline;
          position: absolute;
@@ -55,40 +68,51 @@
          left: 5px;
          z-index: 3
       }
-      .app-card-name {
-        padding-top: 10px;
+      .app-card-title {
+        padding-top: 18px;
+        h4 {
+          font-size: 21px;
+        }
+      }
+      a {
+        text-decoration: none;
       }
     }
   }
 
-    a {
-      text-decoration: none;
-    }
-
 .app-card-image {
+  transition: 0.2s all ease;
   height: 200px;
-  width: 100%;
   background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 3px 3px 0 0;
 }
 
 .app-card-content {
+  transition: 0.2s all ease;
   width: 100%;
-  font-size: 14px;
-  padding: 10px;
+  padding: 0px 15px;
   color: black;
 }
 
-hr {
-  margin: 10px;
+.long-description {
+  opacity: 0;
+  font-size: 15px;
 }
 
-.long-description {
-  display: none;
+.short-description {
+  display: inline;
 }
 
 .icons-container {
   display: none;
+}
+
+.app-card__category-tags-container {
+  width: 100%;
+  height: 20px;
+}
+
+p {
+  font-size: 5px;
 }
