@@ -104,3 +104,11 @@ input[type=checkbox] {
 input[type=checkbox]:checked + label {
   opacity: 1;
 }
+
+textarea.form-control {
+  border-radius: 5px;
+  font-size: 14px;
+  &:focus {
+    border-color: $green;
+  }
+}
