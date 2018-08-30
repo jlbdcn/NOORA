@@ -34,10 +34,21 @@
                 <p>Rating: <i class="fa fa-star" aria-hidden="true"></i><%= @average %>/10</p>
               </div>
             </div>
-  
-            <p class="app-show__description"><%= @app.description %></p>
 
-            <%= cl_image_tag @app.app_screens.first.url, class: "app-show__image", style: "height: 600px;" %>
+            <p class="app-show__description"><%= @app.description %></p>
+            <div class = carousel-container>
+              <div class="siema">
+                <% @app.app_screens.each do |screen| %>
+                  <div>
+                    <%= cl_image_tag screen.url_url, class: "app-show__image", width: 600 %>
+                  </div>
+                <% end %>
+              </div>
+              <div class="carousel-button">
+                <button class="prev button"> prev.</button>
+                <button class="next button"> next </button>
+              </div>
+            </div>
 
             <%= simple_form_for [@app, @review] do |f| %>
               <% if @review.errors.any? %>
@@ -49,22 +60,22 @@
                   </ul>
                 </div>
               <% end %>
-              
-              <p><strong>Review</strong></p>  
-              
-              <%= f.input :rating, 
-                          as: :radio_buttons, 
-                          collection: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 
-                          label: false, 
+
+              <p><strong>Review</strong></p>
+
+              <%= f.input :rating,
+                          as: :radio_buttons,
+                          collection: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+                          label: false,
                           legend: false,
-                          wrapper_html: { id: "vote_controls" } 
+                          wrapper_html: { id: "vote_controls" }
               %>
-              
+
               <%= f.input :content, label: false, placeholder: "write your review..."  %>
               <div class="submit-btn-wrapper">
                 <%= f.submit "Post your review", class: "button review__button"  %>
               </div>
-                
+
             <% end %>
             <% if @reviews %>
               <% @reviews.each do |review| %>
