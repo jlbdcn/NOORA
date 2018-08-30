@@ -6,15 +6,11 @@
     </div>
 
     <div class="col-xs-10">
-      <p class="review__user"><%= review.user.username %></p>
-      <div class="stars-wrapper">
-        <% review.rating.times do %>
-          <i class="fas fa-star"></i>
-        <% end %>
-      </div>
-
+      <p class="review__user"><%= review.user.username.capitalize! %></p>
+      <p class="review__ratings"><%= review.rating %></p>
       <p class="review__content"><%= review.content %></p>
+      <p class="review__created_at"><%= time_ago_in_words(review.created_at) %> ago</p>
     </div>
-  </div>
 
+  </div>
 </div>
