@@ -15,39 +15,57 @@ Category.delete_all
 
 #Create categories
 project_management = Category.create!(
-  name: "Project Management"
+  name: "Project Management",
+  icon: "category-icons/icon-project-off.png",
+  icon_hover: "category-icons/icon-project-on.png"
 )
 
 automation = Category.create!(
-  name: "Automation"
+  name: "Automation",
+  icon: "category-icons/icon-automation-off.png",
+  icon_hover: "category-icons/icon-automation-on.png"
 )
 
 marketing = Category.create!(
-  name: "Marketing"
+  name: "Marketing",
+  icon: "category-icons/icon-marketing-off.png",
+  icon_hover: "category-icons/icon-marketing-on.png"
 )
 
 design = Category.create!(
-  name: "Design"
+  name: "Design",
+  icon: "category-icons/icon-design-off.png",
+  icon_hover: "category-icons/icon-design-on.png"
 )
 
 legal = Category.create!(
-  name: "Legal"
+  name: "Legal",
+  icon: "category-icons/icon-legal-off.png",
+  icon_hover: "category-icons/icon-legal-on.png"
 )
 
 finance = Category.create!(
-  name: "Finance"
+  name: "Finance",
+  icon: "category-icons/icon-finance-off.png",
+  icon_hover: "category-icons/icon-finance-on.png"
 )
 
 job_boards = Category.create!(
-  name: "Job Boards"
+  name: "Job Boards",
+  icon: "category-icons/icon-job-off.png",
+  icon_hover: "category-icons/icon-job-on.png"
 )
 
 photography = Category.create!(
-  name: "Photography"
+  name: "Photography",
+  icon: "category-icons/icon-photo-off.png",
+  icon_hover: "category-icons/icon-photo-on.png"
 )
 
 development = Category.create!(
-  name: "Development"
+  name: "Development",
+  icon: "category-icons/icon-development-off.png",
+  icon_hover: "category-icons/icon-development-on.png"
 )
 
 # Create apps
