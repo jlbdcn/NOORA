@@ -23,10 +23,16 @@
     padding: 0px;
   }
   li {
-    padding: 15px 25px;
+    padding: 5px 15px;
     padding-right: 0px;
     &:hover {
       background-color: #e8ebed;
+      .sidebar-icon-hover {
+        display: inline;
+      }
+      .sidebar-icon-no-hover {
+        display: none;
+      }
     }
   }
   &:hover {
@@ -57,6 +63,7 @@
 
 .sidebar__category-name {
   margin-left: 10px;
+  margin-top: 8px;
   visibility: hidden;
   white-space: nowrap;
 }
@@ -106,4 +113,20 @@
 
 .sidebar__favorite {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+}
+
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.sidebar-icon-no-hover {
+  display: inline;
+}
+
+.sidebar-icon-hover {
+  display: none;
 }

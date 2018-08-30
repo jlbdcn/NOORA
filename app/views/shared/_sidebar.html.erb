@@ -9,14 +9,14 @@
       <% if user_signed_in? %>
         <li class="sidebar__favorite">
           <%= link_to favorite_apps_path do %>
-             <i class="fas fa-heart"></i><span class="sidebar__category-name">Favorite</span>
+             <%= image_tag 'category-icons/icon-favorite-on.png', class: "sidebar-icon sidebar-icon-hover" %><%= image_tag 'category-icons/icon-favorite-off.png', class: "sidebar-icon sidebar-icon-no-hover" %></i><span class="sidebar__category-name">Favorite</span>
           <% end %>
         </li>
       <% end %>
       <% Category.all.each do |category| %>
           <li>
             <%= link_to apps_path(category: category.name) do %>
-              <i class="fas fa-magic"></i><div class="sidebar__category-name"><%= category.name %></div>
+              <%= image_tag category.icon, class: "sidebar-icon sidebar-icon-no-hover" %><%= image_tag category.icon_hover, class: "sidebar-icon sidebar-icon-hover" %><div class="sidebar__category-name"><%= category.name %></div>
             <% end %>
           </li>
       <% end %>

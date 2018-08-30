@@ -6,24 +6,23 @@
         <h2>You're favorite apps</h2>
       </div>
     </div>
-
-    <div class="row">
-      <!-- Favorite apps -->
-      <% @apps.each do |app| %>
-        <div class="col-xs-6 col-sm-4 col-md-2">
-          <%= link_to app.webpage_url do %>
-            <!-- boite principale -->
-            <div class="app-card__fav">
-              <!-- background box -->
-              <div class="app-card__visible" style="background-image: url('<%= app.logo %>')">
-                <!-- hovered part -->
-              </div>
-              <div class="app-card__hidden">
-                <%= link_to "Remove", bookmark_path(current_user.bookmarks.where(app: app)[0]), class: "little-button left", method: "delete" %>
-                <%= link_to "Infos",app_path(app), class: "little-button right" %>
-              </div>
-            </div>
-          <% end %>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item active">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+      </li>
+      <% Category.all.each do |category| %>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-<%= category.name.gsub(" ", "-") %>" role="tab" aria-controls="pills-contact" aria-selected="false"><%= category.name %></a>
+        </li>
+      <% end %>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade active in" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+        <%= render 'shared/favorite-list', apps: @apps %>
+      </div>
+      <% Category.all.each do |category| %>
+        <div class="tab-pane fade" id="pills-<%= category.name.gsub(" ", "-") %>" role="tabpanel" aria-labelledby="pills-<%= category.name.gsub(" ", "-") %>-tab">
+          <%= render 'shared/favorite-list', apps: @apps.where(category: category) %>
         </div>
       <% end %>
     </div>
