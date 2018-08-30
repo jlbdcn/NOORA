@@ -8,11 +8,7 @@
           <!-- hovered part -->
         </div>
         <div class="app-card__hidden">
-          <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
-            <div class="little-button left">
-              Remove
-            </div>
-          <% end %>
+          <%= link_to "Remove", bookmark_path(current_user.bookmarks.where(app: app)[0]), class: "little-button left", method: "delete" %>
           <%= link_to "Infos",app_path(app), class: "little-button right" %>
         </div>
       </div>
