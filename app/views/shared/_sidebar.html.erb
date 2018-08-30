@@ -9,7 +9,7 @@
       <% if user_signed_in? %>
         <li class="sidebar__favorite">
           <%= link_to favorite_apps_path do %>
-             <%= image_tag 'category-icons/icon-favorite-on.png', class: "sidebar-icon sidebar-icon-hover" %><%= image_tag 'category-icons/icon-favorite-off.png', class: "sidebar-icon sidebar-icon-no-hover" %></i><span class="sidebar__category-name">Favorite</span>
+             <%= image_tag 'category-icons/icon-favorite-on.png', class: "sidebar-icon sidebar-icon-hover" %><%= image_tag 'category-icons/icon-favorite-off.png', class: "sidebar-icon" %></i><span class="sidebar__category-name">Favorite</span>
           <% end %>
         </li>
       <% end %>
