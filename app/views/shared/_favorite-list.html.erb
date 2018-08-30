@@ -1,0 +1,17 @@
+<% apps.each do |app| %>
+  <div class="col-xs-6 col-sm-4 col-md-2">
+    <%= link_to app.webpage_url, target: "_blank" do %>
+      <!-- boite principale -->
+      <div class="app-card__fav">
+        <!-- background box -->
+        <div class="app-card__visible" style="background-image: url('<%= app.logo %>')">
+          <!-- hovered part -->
+        </div>
+        <div class="app-card__hidden">
+          <%= link_to "Remove", bookmark_path(current_user.bookmarks.where(app: app)[0]), class: "little-button left", method: "delete" %>
+          <%= link_to "Infos",app_path(app), class: "little-button right" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
