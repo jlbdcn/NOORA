@@ -15,10 +15,11 @@
 }
 .bookmark-alert {
   position: absolute;
-  right: 20px;
   bottom: 20px;
-  color: white;
+  right: 20px;
   visibility: hidden;
+  padding: 20px;
+  color: white;
 }
 .bookmark-alert-display {
   visibility: visible;
