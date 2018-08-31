@@ -21,19 +21,30 @@
             <h1 class="app-show__heading"><%= @app.name %></h1>
 
 
-            <p class="app-show__category">Category:  <%= @app.category&.name %></p>
+            <p class="app-show__category"> <strong>Category: </strong><%= @app.category&.name %></p>
 
 
             <div class="price-average-wrapper">
-              <p class="app-show__price">
-                Price:
-                <%= link_to "Free", "#", class: "app-show__price-link" %>
-              </p>
-
-              <div class="average">
-                <p>Rating: <i class="fa fa-star" aria-hidden="true"></i><%= @average %>/10</p>
+              
+              <div>
+                <p class="app-show__price">
+                  <strong>Price: </strong>
+                  <%= link_to "Free", "#", class: "app-show__price-link" %>
+                </p>
               </div>
+
+      
+              <div>
+                <% if @review.rating.present? %>
+                    <p><strong>Rating: </strong><i class="fa fa-star" aria-hidden="true"></i><%= @average %>/10</p>
+                  <% else%>
+                    <p><strong>Rating: </strong>n/a</p>
+                  <% end %>
+              </div>
+            
+
             </div>
+
 
             <p class="app-show__description"><%= @app.description %></p>
             <div class = carousel-container>
@@ -44,9 +55,16 @@
                   </div>
                 <% end %>
               </div>
-              <div class="carousel-button">
-                <button class="prev button"> prev.</button>
-                <button class="next button"> next </button>
+              
+                <div class="carousel__text">
+                  <div class="carousel__prev">
+                   prev&nbsp;
+                  </div>
+          
+                   <div class="carousel__next">
+                    next
+                  </div>
+
               </div>
             </div>
 
