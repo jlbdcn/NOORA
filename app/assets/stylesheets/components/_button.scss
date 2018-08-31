@@ -1,13 +1,23 @@
 .button {
+
+  //position & size
+  height: 40px;
+
+  // Box composition
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  background: $brand-gradient;
+
+  // Typo
+  font-family: 'Montserrat';
   color: #FFF;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 500;
+
+  // Visual
+  background: $brand-gradient;
   border-radius: 50px;
+
   &:hover {
     text-decoration: none;
     color: white;
@@ -15,18 +25,21 @@
   }
 }
 
-
 .little-button {
-  //position et prop.
+  ///position & size
   height: 25px;
+
+  // Box composition
   display: flex;
   justify-content: center;
   align-items: center;
 
-  //visuel
-  background: $light-gray;
+  // Typo
   color: white;
   font-size: 12px;
+
+  //visual
+  background: $light-gray;
   text-decoration: none;
   border: 1px solid white;
 }
