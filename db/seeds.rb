@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # Delete all previous data
+Review.delete_all
 AppScreen.delete_all
 Bookmark.delete_all
 User.delete_all
@@ -669,7 +670,50 @@ AppScreen.create!(
   app: App.find_by_name("JIRA")
 )
 
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709012/Trello_screenshot_1.jpg",
+  description: "Track your tasks",
+  app: App.find_by_name("Trello")
+)
 
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709013/Trello_screenshot_2.jpg",
+  description: "Information at a glance",
+  app: App.find_by_name("Trello")
+)
 
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709015/Trello_screenshot_3.jpg",
+  description: "Work with any team",
+  app: App.find_by_name("Trello")
+)
 
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_1.png",
+  description: "See all tasks",
+  app: App.find_by_name("Asana")
+)
 
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_2.png",
+  description: "Track responsibilities",
+  app: App.find_by_name("Asana")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_3.png",
+  description: "Plan from beginning to end",
+  app: App.find_by_name("Asana")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_4.png",
+  description: "View your teams' milestones",
+  app: App.find_by_name("Asana")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_5.png",
+  description: "Find out if everything is going according to plan",
+  app: App.find_by_name("Asana")
+)
