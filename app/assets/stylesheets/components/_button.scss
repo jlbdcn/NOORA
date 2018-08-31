@@ -25,23 +25,3 @@
   }
 }
 
-.little-button {
-  ///position & size
-  height: 25px;
-
-  // Box composition
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  // Typo
-  color: white;
-  font-size: 12px;
-
-  //visual
-  background: $light-gray;
-  text-decoration: none;
-  border: 1px solid white;
-}
-
-
