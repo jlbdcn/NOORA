@@ -1,10 +1,8 @@
 //Contenant
+
 .app-card__fav {
   //taille et fonction
   width: 100%;
-  margin: .5rem 0 1rem 0;
-  display: flex;
-  flex-direction: column;
 
   // design
   background: white;
@@ -25,35 +23,33 @@
 // Contenant de la photo
 .app-card__visible {
 
-  height: 135px;
+  height: 175px;
   width: auto;
+  padding: 20px;
+
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 5px;
   background-origin: content-box,padding-box;
-  padding: 15px 15px 0px 15px;
 }
 
 // partie cache de la carte - boutons
 .app-card__hidden{
+  //Position & size
+  position: absolute;
+  top : 5px;
+  height: 20px;
+  // propriete
   visibility: hidden;
-  width:100%;
+}
 
-  display: flex;
-  justify-content: space-around;
-  font-size: 10px !important;
+.fav-icon__info {
+  position: absolute;
+  left : 20px;
+}
 
-  .little-button{
-    width: 100%;
-  }
-
-  .left {
-    border-bottom-left-radius: 5px;
-  }
-
-  .right {
-    border-bottom-right-radius: 5px;
-  }
-
+.fav-icon__trash {
+  position: absolute;
+  right : 20px;
 }

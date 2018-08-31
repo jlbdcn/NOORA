@@ -7,11 +7,14 @@
         <div class="app-card__visible" style="background-image: url('<%= app.logo %>')">
           <!-- hovered part -->
         </div>
-        <div class="app-card__hidden">
-          <%= link_to "Remove", bookmark_path(current_user.bookmarks.where(app: app)[0]), class: "little-button left", method: "delete" %>
-          <%= link_to "Infos",app_path(app), class: "little-button right" %>
-        </div>
+            <%= link_to app_path(app) do %>
+               <%= image_tag 'card-icons/info-icon.png', class: "app-card__hidden fav-icon__info" %>
+            <% end %>
+            <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
+               <%= image_tag 'card-icons/trash-icon.png', class: "app-card__hidden fav-icon__trash" %>
+            <% end %>
       </div>
     <% end %>
   </div>
 <% end %>
+
