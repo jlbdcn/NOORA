@@ -8,7 +8,7 @@
           <div class="app-show__side ">
             <div class="app-show__logo app-card" style="background-image: url('<%= @app.logo_url %>');">
             </div>
-              <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button" do %>
+              <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button", remote: true do %>
                 Add to favorite
               <% end %>
               <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
