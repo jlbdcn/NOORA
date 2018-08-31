@@ -6,16 +6,6 @@
 
         <div class="col-xs-4">
           <div class="app-show__side ">
-<<<<<<< HEAD
-            <div class="app-card__show">
-            <div class="app-show__logo" style="background-image: url('<%= @app.logo_url %>');">
-              </div>
-              </div>
-                <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button" do %>
-                  Add to favorite
-                <% end %>
-                <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
-=======
             <div class= "app-card__show">
             <div class="app-show__logo" style="background-image: url('<%= @app.logo_url %>');">
               </div>
@@ -24,7 +14,6 @@
                 Add to favorite
               <% end %>
               <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
->>>>>>> master
           </div>
         </div>
 
@@ -48,7 +37,7 @@
 
       
               <div>
-                <% if @review.rating.present? %>
+                <% if @app.reviews.present? %>
                     <p><strong>Rating: </strong><i class="fa fa-star" aria-hidden="true"></i><%= @average %>/10</p>
                   <% else%>
                     <p><strong>Rating: </strong>n/a</p>
