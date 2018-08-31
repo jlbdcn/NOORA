@@ -10,6 +10,7 @@
 Review.delete_all
 AppScreen.delete_all
 Bookmark.delete_all
+Review.delete_all
 User.delete_all
 App.delete_all
 Category.delete_all

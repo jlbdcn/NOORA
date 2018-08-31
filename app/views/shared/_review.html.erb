@@ -1,16 +1,14 @@
 
 <div class="review">
-  <div class="row">
-    <div class="col-xs-2 image-wrapper">
-      <%= cl_image_tag review.user.avatar_url, class: "review__avatar" %>
+  <div class="review-header">
+    <%= cl_image_tag review.user.avatar_url, class: "review__avatar" %>
+    <div>
+      <p class="review__user"><b><%= review.user.username.capitalize! %></b> on <%= l(review.created_at, format: :month_year) %></p>
+      <p class="review__ratings">
+        <i class="fa fa-star" aria-hidden="true"></i> <%= review.rating %>/10
+      </p>
     </div>
-
-    <div class="col-xs-10">
-      <p class="review__user"><%= review.user.username.capitalize! %></p>
-      <p class="review__ratings"><%= review.rating %></p>
-      <p class="review__content"><%= review.content %></p>
-      <p class="review__created_at"><%= time_ago_in_words(review.created_at) %> ago</p>
-    </div>
-
   </div>
+  <p class="review__content"><%= review.content %></p>
+    
 </div>
