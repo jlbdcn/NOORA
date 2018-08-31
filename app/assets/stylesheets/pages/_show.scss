@@ -67,7 +67,7 @@
 
   .price-average-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     .average {
       margin-left: 30px;
     }
@@ -76,6 +76,7 @@
   .app-show__price {
     color: rgb(25, 25, 25);
     text-decoration: none;
+    margin: 0;
   }
 
   .app-show__description {
@@ -92,23 +93,21 @@
   }
 
 .carousel-button {
-    display: flex;
-    justify-content: center;
+   display: flex;
+   justify-content: center;
 
-  .button{
-    border: none !important;
-    height: 25px;
-    margin: 0 10px;
+ .button{
+   border: none !important;
+   height: 25px;
+   margin: 0 10px;
 
-    font-family: 'Oswald';
-    font-size: 15px;
+   font-family: ‘Oswald’;
+   font-size: 15px;
 
-    &:focus{
-      box-shadow: none;
-      outline: none;
-    }
-  }
+   &:focus{
+     box-shadow: none;
+     outline: none;
+   }
+ }
 }
-
-
 
