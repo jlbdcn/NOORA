@@ -37,19 +37,21 @@
             </div>
 
             <p class="app-show__description"><%= @app.description %></p>
-            <div class = carousel-container>
-              <div class="siema">
-                <% @app.app_screens.each do |screen| %>
-                  <div>
-                    <%= cl_image_tag screen.url_url, class: "app-show__image", width: 600 %>
-                  </div>
-                <% end %>
+            <% if @app.app_screens.present? %>
+              <div class = carousel-container>
+                <div class="siema">
+                  <% @app.app_screens.each do |screen| %>
+                    <div>
+                      <%= cl_image_tag screen.url_url, class: "app-show__image", width: 600 %>
+                    </div>
+                  <% end %>
+                </div>
+                <div class="carousel-button">
+                  <button class="prev button"> prev.</button>
+                  <button class="next button"> next </button>
+                </div>
               </div>
-              <div class="carousel-button">
-                <button class="prev button"> prev.</button>
-                <button class="next button"> next </button>
-              </div>
-            </div>
+            <% end %>
 
             <%= simple_form_for [@app, @review] do |f| %>
               <% if @review.errors.any? %>
