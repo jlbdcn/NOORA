@@ -4,9 +4,17 @@ class BookmarksController < ApplicationController
     @bookmark.user = current_user
     @app = App.find(params[:app_id])
     if @bookmark.save
-      redirect_to apps_path
+      @message = "Application has been added to your favorites."
+      respond_to do |format|
+        format.html { redirect_to apps_path }
+        format.js
+      end
     else
-      render 'apps/show'
+      @message = "Application had already been added to your favorites."
+      respond_to do |format|
+        format.html { redirect_to apps_path }
+        format.js
+      end
     end
   end
 

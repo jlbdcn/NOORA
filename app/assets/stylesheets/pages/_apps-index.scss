@@ -1,5 +1,10 @@
 .main-container {
   display: flex;
+
+  // Alignement titre page avec cartes
+  .h2 {
+    margin-left: 20px;
+  }
 }
 .sidebar-container {
   width: 70px;
@@ -87,102 +92,3 @@
   padding: 0px 10px;
   font-family: 'Montserrat', sans-serif;
 }
-
-
- // .app-card-title {
- //    h4 {
- //    font-size: 12px;
- //    margin-bottom: 5px;
- //    }
- // }
-
-// .app-card {
-  // max-width: 510px;
-  // min-width: 255;
-  // max-height: 282px;
-  // min-height: 141;
-  // margin: 10px 20px;
-  // border-radius: 3px;
-  // background-color: white;
-  // display: flex;
-  // flex-direction: column;
-  // position: relative;
-  // overflow: hidden;
-  // box-shadow: 0 0.5px 0.5px 0 rgba(0,0,0,0.1), 0 0.5px 1px 0 rgba(0,0,0,0.1), 0 1px 0.5px -2px rgba(0,0,0,0.1);
-
-    // &:hover {
-    //  .app-card-image {
-    //     background-size: cover;
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     width: 100%;
-    //     height: 282px;
-    //     position: absolute;
-    //     z-index: 1
-    //   }
-
-     // .app-card-content {
-     //    background-image: linear-gradient(to bottom, rgba(255,255,255,.9), rgba(255,255,255,.9));
-     //    width: 100%;
-     //    height: 320px;
-     //    padding: 0 30px;
-     //    background-color: transparent;
-     //    position: relative;
-     //    z-index: 2;
-     //   }
-
-  //     .short-description {
-  //       display: inline;
-  //     }
-
-  //     .icons-container {
-  //        display: inline;
-  //        position: absolute;
-  //        top: 5px;
-  //        left: 5px;
-  //     }
-  //     .app-card-title {
-  //       padding-top: 18px;
-  //       h4 {
-  //         font-size: 21px;
-  //       }
-  //     }
-  //     a {
-  //       text-decoration: none;
-  //     }
-  //   }
-  // }
-
-// .app-card-image {
-  // transition: 0.2s all ease;
-  // height: 200px;
-  // background-position: center;
-  // background-size: cover;
-  // border-radius: 3px 3px 0 0;
-// }
-
-// .app-card-content {
-//   transition: 0.2s all ease;
-//   width: 100%;
-//   padding: 0px 15px;
-//   color: black;
-// }
-
-// .long-description {
-//   opacity: 0;
-//   font-size: 15px;
-// }
-
-// .short-description {
-//   display: inline;
-// }
-
-// .icons-container {
-//   display: none;
-// }
-
-// .app-card__category-tags-container {
-//   width: 100%;
-//   height: 20px;
-// }
-

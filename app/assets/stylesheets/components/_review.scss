@@ -37,10 +37,10 @@
 
 .review__button {
   border: none;
-  margin-bottom: 30px;
-  background: #C4C4C4;
+  height: 30px;
   color: white;
   font-size: 12px;
+  background: #C4C4C4;
 }
 
 .submit-btn-wrapper {
@@ -52,10 +52,8 @@
 
 
 
-
-
 // Radio buttons hack, hide inputs and style labels
-// as click on label causes input to be selected 
+// as click on label causes input to be selected
 // and send right data into params
 
 #vote_controls > .form-check {
