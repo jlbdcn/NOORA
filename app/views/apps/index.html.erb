@@ -25,17 +25,12 @@
                   <p class="app-card__category"><i class="fas fa-tag"></i> <%= app.category.name %></p>
                 </div>
                 <div class="app-card-description">
-                  <p class="short-description"> <%= app.description[0..70] %>...</p>
+                  <p class="short-description"> <%= app.description[0..120] %>...<b>More info</b></p>
                 </div>
               </div>
               <div class="icons-container">
-<<<<<<< HEAD
-                <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon" do %>
+                <%= link_to app_bookmarks_path(app), method: "post", remote:true, class: "bookmarks-icon" do %>
                   <i class="far fa-star"></i>
-=======
-                <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon", remote: true do %>
-                  <i class="fas fa-bookmark"></i>
->>>>>>> master
                 <% end %>
               </div>
             </div>
