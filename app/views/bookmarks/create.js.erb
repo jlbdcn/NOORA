@@ -8,7 +8,14 @@ function addAlert() {
   } else {
     addBox.classList.add("alert-warning");
   };
-  addBox.innerHTML = '<%= @message %><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+  addBox.innerHTML = '<%= @message %>';
 };
 
-addAlert();
+function removeAlert() {
+  const addBox = document.querySelector(".bookmark-alert");
+  addBox.classList.remove("bookmark-alert-display");
+}
+
+addAlert()
+
+setTimeout(removeAlert, 3000);
