@@ -27,7 +27,7 @@
 
 
             <div class="price-average-wrapper">
-              
+
               <div>
                 <p class="app-show__price">
                   <strong>Price: </strong>
@@ -35,15 +35,15 @@
                 </p>
               </div>
 
-      
+
               <div>
                 <% if @app.reviews.present? %>
-                    <p><strong>Rating: </strong><i class="fa fa-star" aria-hidden="true"></i><%= @average %>/10</p>
+                    <p><strong>Rating: </strong><%= @average %>/10</p>
                   <% else%>
                     <p><strong>Rating: </strong>n/a</p>
                   <% end %>
               </div>
-            
+
 
             </div>
 
