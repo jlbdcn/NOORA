@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="icons-container">
-                <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon" do %>
+                <%= link_to app_bookmarks_path(app), method: "post", class: "bookmarks-icon", remote: true do %>
                   <i class="fas fa-bookmark"></i>
                 <% end %>
               </div>
