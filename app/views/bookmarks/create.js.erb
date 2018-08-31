@@ -1,0 +1,21 @@
+function addAlert() {
+  const addBox = document.querySelector(".bookmark-alert");
+  addBox.classList.add("bookmark-alert-display");
+  addBox.classList.remove("alert-info");
+  addBox.classList.remove("alert-warning");
+  if ('<%= @message %>' == "Application has been added to your favorites.") {
+    addBox.classList.add("alert-info");
+  } else {
+    addBox.classList.add("alert-warning");
+  };
+  addBox.innerHTML = '<%= @message %>';
+};
+
+function removeAlert() {
+  const addBox = document.querySelector(".bookmark-alert");
+  addBox.classList.remove("bookmark-alert-display");
+}
+
+addAlert()
+
+setTimeout(removeAlert, 1500);
