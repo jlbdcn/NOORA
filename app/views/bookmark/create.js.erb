@@ -1,0 +1,8 @@
+console.log("Works");
+function addAlert() {
+  const addBox = document.querySelector(".bookmark-alert");
+  addBox.listClass.add("bookmark-alert-display");
+  addBox.insertAdjacentHTML('beforeend', <%= @message %>)
+}
+
+addAlert();

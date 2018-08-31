@@ -13,3 +13,13 @@
 .alert-warning {
   background: $red;
 }
+.bookmark-alert {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  color: white;
+  visibility: hidden;
+}
+.bookmark-alert-display {
+  visibility: visible;
+}
