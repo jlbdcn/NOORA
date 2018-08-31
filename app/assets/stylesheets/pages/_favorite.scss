@@ -3,6 +3,8 @@
 .app-card__fav {
   //taille et fonction
   width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 
   // design
   background: white;
@@ -38,7 +40,7 @@
 .app-card__hidden{
   //Position & size
   position: absolute;
-  top : 5px;
+  top : 20px;
   height: 20px;
   // propriete
   visibility: hidden;
