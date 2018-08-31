@@ -14,13 +14,19 @@
   background: $red;
 }
 .bookmark-alert {
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   right: 20px;
   visibility: hidden;
   padding: 20px;
   color: white;
+  border-radius: 5px;
+  button {
+    color: white;
+    opacity: 0.7;
+  }
 }
 .bookmark-alert-display {
   visibility: visible;
+  z-index: 202;
 }

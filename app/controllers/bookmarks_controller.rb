@@ -4,7 +4,6 @@ class BookmarksController < ApplicationController
     @bookmark.user = current_user
     @app = App.find(params[:app_id])
     if @bookmark.save
-<<<<<<< HEAD
       @message = "Application has been added to your favorites."
       respond_to do |format|
         format.html { redirect_to apps_path }
@@ -16,23 +15,6 @@ class BookmarksController < ApplicationController
         format.html { redirect_to apps_path }
         format.js
       end
-=======
-      redirect_to apps_path
-      # @mess = "Bookmark saved!"
-      # puts "Bookmark has been saved"
-      # respond_to do |format|
-      #   format.html { redirect_to apps_path }
-      #   format.js
-      end
-    else
-      # puts "Bookmark hasn't been saved"
-      # @mess = "Has already been added to your favorites"
-      # respond_to do |format|
-      #   format.html { redirect_to apps_path }
-      #   format.js
-      # end
-      redirect_to apps_path
->>>>>>> master
     end
   end
 
