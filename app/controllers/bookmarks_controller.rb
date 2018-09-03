@@ -1,5 +1,12 @@
 class BookmarksController < ApplicationController
-  def create
+  skip_before_action :authenticate_user!
+
+   def create
+    if current_user
+      @user_logged_in = true
+    else
+      @user_logged_in = false
+    end
     @bookmark = Bookmark.new(app: App.find(params[:app_id]))
     @bookmark.user = current_user
     @app = App.find(params[:app_id])
