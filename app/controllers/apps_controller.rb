@@ -15,7 +15,7 @@ class AppsController < ApplicationController
   def show
     @bookmark = Bookmark.new
     @reviews = @app.reviews
-    
+
     ratings = []
     @reviews.each do |review|
       ratings << review.rating
@@ -30,7 +30,7 @@ class AppsController < ApplicationController
     else
       @average = sum / ratings.length
     end
-    
+
     @review = Review.new
   end
 
