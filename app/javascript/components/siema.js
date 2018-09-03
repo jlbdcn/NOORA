@@ -2,9 +2,13 @@ import Siema from 'siema';
 
 // Initialize carousel lib
 function initSiema() {
-  const mySiema = new Siema();
-  document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-  document.querySelector('.next').addEventListener('click', () => mySiema.next());
+  const prev = document.querySelector('.prev-screen')
+  const next = document.querySelector('.next-screen')
+  if (prev && next ) {
+    const mySiema = new Siema();
+    prev.addEventListener('click', () => mySiema.prev());
+    next.addEventListener('click', () => mySiema.next());
+  }
   // configure here
 }
 
