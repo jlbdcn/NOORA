@@ -1,0 +1,9 @@
+<% if @apps %>
+  <% @apps.each do |app| %>
+    <%= app.name %>
+  <% end %>
+<% else %>
+  <p><%= @user %> has no favorite apps.</p>
+<% end %>
+
+<%= @token %>
