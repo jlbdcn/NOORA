@@ -9,11 +9,11 @@
     <% if @apps.present? %>
       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
         <li class="nav-item active">
-          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+          <a class="nav-link active " id="pills-home-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
         </li>
         <% @apps.map { |app| app.category }.uniq.each do |category| %>
           <li class="nav-item">
-            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-<%= category.name.gsub(" ", "-") %>" role="tab" aria-controls="pills-contact" aria-selected="false"><%= category.name %></a>
+            <a class="nav-link " id="pills-contact-tab" data-toggle="pill" href="#pills-<%= category.name.gsub(" ", "-") %>" role="tab" aria-controls="pills-contact" aria-selected="false"><%= category.name %></a>
           </li>
         <% end %>
       </ul>
