@@ -2,9 +2,9 @@
   <div class="sidebar-container"></div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 h2">
-        <h2> Discover our selection: </h2>
-      </div>
+
+        <h2 class="h2"> Discover our selection: </h2>
+
     </div>
 
     <div class="row">
@@ -19,14 +19,14 @@
               <% end %>
               <div class="app-card__content">
                 <div class="app-card__title">
-                  <h4><%= app.name %></h4>
+                  <h5><%= app.name %></h5>
                 </div>
                 <div class="app-card__category-tags-container">
                   <p class="app-card__category"><i class="fas fa-tag"></i> <%= app.category.name %></p>
                   <i class="fas fa-star"></i><span class="bookmarks-nb"> <%= app.bookmarks.count %></span>
                 </div>
                 <div class="app-card__description">
-                  <p class="short-description"> <%= app.description[0..100] %>...<b>More info</b></p>
+                  <p class="short-description"> <%= app.description[0..100] %>...<b> More info</b></p>
                 </div>
               </div>
               <div class="icons-container">
