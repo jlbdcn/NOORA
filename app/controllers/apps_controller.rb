@@ -1,6 +1,6 @@
 class AppsController < ApplicationController
   before_action :set_app, only: [:show]
-  skip_before_action :authenticate_user!, only: [:index, :show, :shared_page]
+  skip_before_action :authenticate_user!, only: [:index, :show, :shared_apps]
 
   def index
     if params[:category].present?
