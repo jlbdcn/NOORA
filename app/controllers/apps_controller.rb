@@ -1,6 +1,6 @@
 class AppsController < ApplicationController
   before_action :set_app, only: [:show]
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :shared_apps]
 
   def index
     if params[:category].present?
@@ -38,6 +38,11 @@ class AppsController < ApplicationController
     @apps = current_user.apps
   end
 
+  def shared_apps
+    @user = User.where(public_token: params[:public_token])[0]
+    @apps = @user.apps
+  end
+
   private
 
   def app_params
@@ -47,5 +52,6 @@ class AppsController < ApplicationController
   def set_app
     @app = App.find(params[:id])
   end
+
 end
 

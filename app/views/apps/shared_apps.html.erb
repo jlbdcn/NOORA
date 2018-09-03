@@ -1,0 +1,9 @@
+<% if @apps %>
+  <% @apps.each do |app| %>
+    <%= app.name %>
+  <% end %>
+<% else %>
+  <p><%= @user %> has no favorite apps.</p>
+<% end %>
+
+<%= link_to "Save to your favorites", create_multiple_bookmarks_path(apps: @apps.map { |app| app.id }), class: "btn button" %>

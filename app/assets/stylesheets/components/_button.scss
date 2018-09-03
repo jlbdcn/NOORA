@@ -24,3 +24,11 @@
     box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
   }
 }
+
+.button:active {
+  background: $brand-gradient;
+}
+
+.btn:active, .btn.active {
+
+}
