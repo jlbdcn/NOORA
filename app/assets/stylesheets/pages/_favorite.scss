@@ -55,3 +55,36 @@
   position: absolute;
   right : 20px;
 }
+
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
+  color: #fff;
+}
+
+.nav-pills > li > a, .nav-pills > li {
+  color: #C4C4C4;
+  &:hover {
+    background: none;
+  }
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #C4C4C4;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
