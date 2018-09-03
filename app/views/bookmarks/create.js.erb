@@ -16,6 +16,14 @@ function removeAlert() {
   addBox.classList.remove("bookmark-alert-display");
 }
 
-addAlert()
+function checkUser() {
+  if (<%= @user_logged_in %> === false) {
+    window.location.replace("<%= new_user_session_path %>");
+  } else {
+    addAlert()
+  }
+}
+
+checkUser()
 
 setTimeout(removeAlert, 1500);
