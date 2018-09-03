@@ -3,7 +3,7 @@
 
   // Alignement titre page avec cartes
   .h2 {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 }
 .sidebar-container {
@@ -13,13 +13,16 @@
   flex: 1 1 auto;
 }
 
+.container {
+ width: 1100px;
+}
 .app-card {
     //taille et fonction
-  width: 100%;
+  width: 200px;
   height: 200px;
-  margin: .5rem 0 1rem 0;
   display: flex;
   flex-direction: column;
+  margin: 30px;
 
   // design
   background: white;
@@ -77,8 +80,8 @@
 
 .icons-container {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   display: none;
 }
 
@@ -93,3 +96,4 @@
   padding: 0px 10px;
   font-family: 'Montserrat', sans-serif;
 }
+
