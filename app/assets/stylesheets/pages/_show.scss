@@ -55,13 +55,12 @@
 
   .app-show__heading {
     color: rgb(25, 25, 25);
-    letter-spacing: 4px;
   }
 
   .app-show__category {
     color: rgb(25, 25, 25);
     margin-bottom: 0px;
-    margin-top: 30px;
+    margin-top: 25px;
 
   }
 
@@ -76,7 +75,6 @@
   .app-show__price {
     color: rgb(25, 25, 25);
     text-decoration: none;
-    margin: 0;
   }
 
   .app-show__description {
@@ -88,21 +86,22 @@
     background: #FFFFFF;
     border: 1px solid #DCDCDC;
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-top: 25px;
     border: none;
   }
 
 .carousel-button {
    display: flex;
    justify-content: center;
+   margin-top: 10px;
 
- .button{
-   border: none !important;
-   height: 25px;
-   margin: 0 10px;
-
-   font-family: ‘Oswald’;
-   font-size: 15px;
+ button {
+  border: none !important;
+  height: 25px;
+  margin: 0 10px;
+  background: none !important;
+  text-decoration: underline !important;
+  font-size: 15px;
 
    &:focus{
      box-shadow: none;

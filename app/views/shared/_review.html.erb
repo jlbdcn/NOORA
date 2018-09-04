@@ -5,10 +5,12 @@
     <div>
       <p class="review__user"><b><%= review.user.username.capitalize! %></b> on <%= l(review.created_at, format: :month_year) %></p>
       <p class="review__ratings">
-        <i class="fa fa-star" aria-hidden="true"></i> <%= review.rating %>/10
+        <% review.rating.times do %>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        <% end %>
       </p>
     </div>
   </div>
   <p class="review__content"><%= review.content %></p>
-    
+
 </div>

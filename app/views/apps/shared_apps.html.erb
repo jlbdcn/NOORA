@@ -1,9 +1,37 @@
-<% if @apps %>
-  <% @apps.each do |app| %>
-    <%= app.name %>
-  <% end %>
-<% else %>
-  <p><%= @user %> has no favorite apps.</p>
-<% end %>
+<div class="container">
+	<div class="row">
 
-<%= link_to "Save to your favorites", create_multiple_bookmarks_path(apps: @apps.map { |app| app.id }), class: "btn button" %>
+		<div class="col-xs-12">
+
+			<div class="shared-apps__top">
+				<div class="shared-apps-name">
+					<h2>
+			  	 <%= @user.username.capitalize! %>'s Favorite Apps:
+			  	 </h2>
+			  </div>
+				<div>
+				  <%= link_to "Save to your favorites", create_multiple_bookmarks_path(apps: @apps.map { |app| app.id }), class: "btn button small" %>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="row">
+		<% if @apps.any? %>
+			<%= render "shared_favorite-list", apps: @apps %>
+		<% else %>
+			<h1>no apps dude</h1>
+		<% end %>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+

@@ -3,37 +3,44 @@
 
   // Alignement titre page avec cartes
   .h2 {
-    margin-left: 30px;
+    padding-left: 43px;
+    margin-bottom: -3px;
+    font-size: 30px !important;
   }
 }
+
 .sidebar-container {
   width: 70px;
 }
+
 .content-container {
   flex: 1 1 auto;
 }
 
 .container {
- width: 1100px;
+ width: 1300px;
+ margin-bottom: 20px;
+ margin-top: 20px;
+  margin-right: 50px;
 }
 .app-card {
     //taille et fonction
-  width: 200px;
-  height: 230px;
+  width: 245px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   margin: 30px;
-  padding: 20px;
+  padding: 30px;
 
   // design
   background: white;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   color: black;
     &:hover {
-       height: 230px;
-       box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.22);
+       height: 240px;
+           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
       .app-card__content {
         width: 100%;
         font-size: 14px;
@@ -67,6 +74,9 @@
         text-decoration: none;
       }
     }
+  .fas {
+    color: #e0e0e0;
+  }
 }
 .app-card__image {
   height: 120px;
@@ -91,6 +101,7 @@
 
 .app-card__category-tags-container {
    width: 100%;
+   font-weight: 300px;
    color: $gray;
    font-size: 12px;
    }

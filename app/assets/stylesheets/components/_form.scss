@@ -1,21 +1,22 @@
 .form {
-  background-image: linear-gradient(-220deg, #4FC4B6, #93F9B9);
   margin-top: 35px;
   padding-bottom: 30px;
   padding-right: 30px;
   padding-left: 30px;
   border-radius: 5px;
-  h1 {
+  background: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  .h2 {
     text-align: center;
-    color: white;
+    color: $dark-gray;
     margin-top: 25px;
     margin-bottom: 25px;
   }
 }
 
 .form-button {
-  background-color: white;
-  color: $green;
   font-weight: bold;
   width: 100%;
 }
@@ -24,16 +25,17 @@
     color: white;
     opacity: 0.9;
     ::-webkit-input-placeholder {
-      color: white;
+      color: $gray;
     }
   .form-control {
     border-color: transparent;
     box-shadow: none;
-    background-image: linear-gradient(to right, #5abc9f, #6fcca0);
-    color: white;
+    background-color: $main;
+    color: $gray;
+    border: 1px solid $light-gray;
   }
   .form-control:focus {
-    border: 2px solid #d3ffff;
+    border: 2px solid $light-gray;
   }
   input[type="checkbox"] {
     margin-right: 8px;
@@ -47,7 +49,7 @@
   display: flex;
   justify-content: space-between;
   a {
-    color: white;
+    color: $gray;
   }
 }
 
@@ -58,8 +60,9 @@ input[type="file"] {
   display: inline-block;
   padding: 6px 12px;
   cursor: pointer;
-  background-color: white;
-  color: $green;
+  background-color: $light-gray;
+  border-radius: 50px;
+  color: white;
   border: none;
   margin-bottom: 15px;
   font-weight: normal;
@@ -67,7 +70,7 @@ input[type="file"] {
 }
 
 .text-muted {
-    color: white;
+    color: $gray;
     margin-left: 3px;
 }
 
@@ -87,8 +90,9 @@ input[type="file"] {
 
 .form-check-label {
   padding: 6px 12px;
-  background-color: white;
-  color: $green;
+  background-color: $light-gray;
+  border-radius: 50px;
+  color: white;
   border: none;
   margin-bottom: 15px;
   font-weight: normal;

@@ -1,9 +1,18 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700|Oswald:200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700');
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url('../fonts/sofia_pro_semi.otf') format("opentype"),
+  url('../fonts/sofia_pro_semi.woff') format("woff"),
+  url('../fonts/sofia_pro_semi.woff2') format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 
 // Define fonts for body and headers
 $body-font: "Montserrat", "Helvetica", "sans-serif";
-$headers-font: "Oswald", "Helvetica", "sans-serif";
+$headers-font: "Sofia Pro", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -16,31 +25,36 @@ $headers-font: "Oswald", "Helvetica", "sans-serif";
 // $my-font: "Font Name";
 
 .h1 {
-  font-size: 75px !important;
-  letter-spacing: 5px;
-  color: $dark-gray;
+ font-size: 75px !important;
+ letter-spacing: 5px;
+ color: $dark-gray;
 }
 
 .h2 {
-  font-size: 36px !important;
-  color: $dark-gray;
+ font-size:  !important;
+ color: $dark-gray;
 }
 
 .h3 {
-  font-size: 36px !important;
-  letter-spacing: 5px;
-  color: $dark-gray;
+ font-size: 1.75em !important;
+ letter-spacing: 5px;
+ color: $dark-gray;
 }
 
 .h4 {
-  font-weight: bold;
-  font-size: 20px !important;
-  letter-spacing: 5px;
-  color: $dark-gray;
+ font-size: 1.125em !important;
+ letter-spacing: 5px;
+ color: $dark-gray;
 }
 
 .h5 {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 20px !important;
+ font-family: “Montserrat”;
+ font-weight: 600;
+ font-size: 20px !important;
+}
+
+.body {
+ font-family: “Montserrat”;
+ font-size: 1em !important;
+ color: $dark-gray;
 }

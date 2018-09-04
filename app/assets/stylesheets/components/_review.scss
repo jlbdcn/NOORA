@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.review__average-rating {
+  display: inline-flex;
+  margin-right: 6px;
+}
+
 .review__avatar {
   width: 30px;
   height: 30px;
@@ -24,6 +29,18 @@
 
 .review__ratings {
   margin: 0px;
+  color: #f2b602;
+  display:  inline-block;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.review__star {
+  margin: 0px;
+  color: #f2b602;
+  display:  inline-block;
+  margin-left: -3px;
+  font-size: 15px;
 }
 
 .review__content {
@@ -49,90 +66,27 @@
   justify-content: flex-end;
 }
 
-
-
-
-// Radio buttons hack, hide inputs and style labels
-// as click on label causes input to be selected
-// and send right data into params
-
-#vote_controls > .form-check {
-  display: inline-block;
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
-fieldset legend {
-  display: none;
+.star-rating input[type=radio] {
+    display: none
 }
 
-#vote_controls {
-  input[type=radio] {
-    display: none;
-  }
-
-
-  label {
+.star-rating label {
+    color: #bbb;
+    font-size: 18px;
+    padding: 0;
     cursor: pointer;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    line-height: 40px;
-    height: 40px;
-    width: 40px;
-    float: left;
-
-    &:hover {
-      background: blue !important;
-      color: #fff !important;
-    }
-  }
-
-  label[for^="review_rating_1"] {
-    background-color: #E9F1FE;
-  }
-
-  label[for^="review_rating_2"] {
-    background-color: #D4E3FD;
-  }
-
-  label[for^="review_rating_3"] {
-    background-color: #BED4FC;
-  }
-
-  label[for^="review_rating_4"] {
-    background-color: #A9C6FB;
-  }
-
-  label[for^="review_rating_5"] {
-    background-color: #93B8FA;
-  }
-
-  label[for^="review_rating_6"] {
-    background-color: #7DAAFA;
-  }
-
-  label[for^="review_rating_7"] {
-    background-color: #679BF9;
-  }
-
-  label[for^="review_rating_8"] {
-    background-color: #528DF8;
-  }
-
-  label[for^="review_rating_9"] {
-    background-color: #4082F7;
-  }
-
-  label[for^="review_rating_10"] {
-    background-color: #2771F6;
-  }
-
-
-  input[id^="review_rating_"][type=radio]:checked ~ label[for^="review_rating_"] {
-    background: blue;
-    color: #fff;
-  }
-
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
 }
 
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+    color: #f2b600
+}
