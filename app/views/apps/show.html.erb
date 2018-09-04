@@ -24,7 +24,7 @@
 
 
             <p class="app-show__category"><strong>Category: </strong><%= @app.category&.name %></p>
-              
+
 
               <div >
                 <% if @app.reviews.present? %>
@@ -38,7 +38,7 @@
                   <% else %>
                     <p><strong>Rating: </strong>n/a</p>
                   <% end %>
-              
+
               </div>
 
 
@@ -65,8 +65,8 @@
                   <% end %>
                 </div>
                 <div class="carousel-button">
-                  <button class="prev-screen button"> prev</button>
-                  <button class="next-screen button"> next </button>
+                  <button class="prev-screen"> prev</button>
+                  <button class="next-screen"> next </button>
                 </div>
               </div>
             <% end %>
