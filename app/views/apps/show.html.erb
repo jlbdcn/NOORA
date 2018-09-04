@@ -38,7 +38,7 @@
 
               <div>
                 <% if @app.reviews.present? %>
-                  <p><strong>Rating: </strong><%= @average %>/10</p>
+                  <p><strong>Rating: </strong><%= @average %>/5</p>
                 <% else%>
                   <p><strong>Rating: </strong>n/a</p>
                 <% end %>
@@ -76,15 +76,30 @@
                 </div>
               <% end %>
 
-              <p><strong>Review</strong></p>
+                <p><strong>Review</strong></p>
 
-              <%= f.input :rating,
-                          as: :radio_buttons,
-                          collection: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-                          label: false,
-                          legend: false,
-                          wrapper_html: { id: "vote_controls" }
-              %>
+                <div class="star-rating">
+                  <input id="star-5" type="radio" name="review[rating]" value="5">
+                  <label for="star-5" title="5 stars">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                  <input id="star-4" type="radio" name="review[rating]" value="4">
+                  <label for="star-4" title="4 stars">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                  <input id="star-3" type="radio" name="review[rating]" value="3">
+                  <label for="star-3" title="3 stars">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                  <input id="star-2" type="radio" name="review[rating]" value="2">
+                  <label for="star-2" title="2 stars">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                  <input id="star-1" type="radio" name="review[rating]" value="1">
+                  <label for="star-1" title="1 star">
+                    <i class="active fa fa-star" aria-hidden="true"></i>
+                  </label>
+                </div>
 
               <%= f.input :content, label: false, placeholder: "write your review..."  %>
               <div class="submit-btn-wrapper">
