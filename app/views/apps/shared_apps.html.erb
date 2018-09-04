@@ -1,26 +1,23 @@
 <div class="container">
 	<div class="row">
-		
+
 		<div class="col-xs-12">
-		
+
 			<div class="shared-apps__top">
 				<div class="shared-apps-name">
 					<h2>
-			  	 <%= @user.username.capitalize! %>'s Favorite Apps: 
+			  	 <%= @user.username.capitalize! %>'s Favorite Apps:
 			  	 </h2>
 			  </div>
 				<div>
-				  <%= link_to "Save to your favorites", create_multiple_bookmarks_path(apps: @apps.map { |app| app.id }), class: "btn button" %>
+				  <%= link_to "Save to your favorites", create_multiple_bookmarks_path(apps: @apps.map { |app| app.id }), class: "btn button small" %>
 				</div>
 			</div>
 
 		</div>
 
 	</div>
-	
-</div>
 
-<div class="container">
 	<div class="row">
 		<% if @apps.any? %>
 			<%= render "shared_favorite-list", apps: @apps %>

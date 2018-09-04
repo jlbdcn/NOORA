@@ -9,12 +9,12 @@
   // design
   background: white;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
   // Hover effect
   &:hover {
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.22);
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
 
     .app-card__hidden{
       visibility: visible;
@@ -25,9 +25,9 @@
 // Contenant de la photo
 .app-card__visible {
 
-  height: 175px;
+  height: 200px;
   width: auto;
-  padding: 20px;
+  padding: 30px;
 
   background-position: center;
   background-size: contain;
@@ -40,7 +40,7 @@
 .app-card__hidden{
   //Position & size
   position: absolute;
-  top : 20px;
+  top : 25px;
   height: 20px;
   // propriete
   visibility: hidden;
@@ -48,12 +48,12 @@
 
 .fav-icon__info {
   position: absolute;
-  left : 20px;
+  left : 25px;
 }
 
 .fav-icon__trash {
   position: absolute;
-  right : 20px;
+  right : 25px;
 }
 
 .fav-header {
@@ -66,21 +66,42 @@
   border: none;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover {
-  color: #fff;
-}
+.nav{
+  //Position
+  margin-top: 25px;
+  margin-bottom: 25px;
 
-.nav-pills > li > a, .nav-pills > li {
-  color: #C4C4C4;
-  &:hover {
-    background: none;
+  //Propriétés
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: $gray;
+
+  &:hover{
+  background-color: none !important;
+  }
+  a {
+    color: $gray;
+    text-decoration: none;
   }
 }
 
+.nav-pills > li > a {
+    border-radius: 0px;
+    font-weight: 300;
+}
+
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  background-color: #C4C4C4;
-  color: #fff;
-  border-radius: 50px;
-  font-weight: 500;
+  color: $dark-gray;
+  background-color: transparent !important;
+  font-weight: 400;
   font-family: "Montserrat";
+  border-bottom: 3px solid $green;
+  }
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
 }
