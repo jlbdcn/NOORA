@@ -30,16 +30,10 @@
                 </div>
               </div>
               <div class="icons-container">
-                <div class="star-container">
-                  <% if current_user.apps.include? app %>
-                      <%= link_to bookmark_path(Bookmark.where(user: current_user, app: app)[0]), method: :delete, remote: :true, class: "full-star-display full-star" do %>
-                        <i class="fas fa-star"></i>
-                      <% end %>
-                  <% else %>
-                      <%= link_to app_bookmarks_path(app), method: :post, remote: :true, class: "empty-star-display empty-star" do %>
-                        <i class="far fa-star"></i>
+                <div class="star-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
+                    <%= link_to bookmarkerr_path(app), method: :get, remote: :true, class: "empty-star-display empty-star" do %>
+                        <i class="fa-star <%= (current_user.apps.include? app) ? 'fas' : 'far' %>"></i>
                     <% end %>
-                  <% end %>
                 </div>
               </div>
             </div>
