@@ -85,7 +85,7 @@
 .icons-container {
   position: absolute;
   top: 40px;
-  right: 40px;
+  right: 90px;
   display: none;
 }
 
@@ -104,4 +104,28 @@
   margin: 0;
 }
 
+.star-container {
+  display: inline;
+  position: relative;
+}
+
+.full-star {
+  display: none;
+  position: absolute;
+}
+
+.empty-star {
+  display: none;
+  position: absolute;
+}
+
+.full-star-display {
+  display: inline;
+  position: absolute;
+}
+
+.empty-star-display {
+ display: inline;
+ position: absolute;
+}
 

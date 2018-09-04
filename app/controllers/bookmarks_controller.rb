@@ -7,9 +7,9 @@ class BookmarksController < ApplicationController
     else
       @user_logged_in = false
     end
-    @bookmark = Bookmark.new(app: App.find(params[:app_id]))
-    @bookmark.user = current_user
     @app = App.find(params[:app_id])
+    @bookmark = Bookmark.new(app: @app)
+    @bookmark.user = current_user
     if @bookmark.save
       @message = "Application has been added to your favorites."
       respond_to do |format|
@@ -38,7 +38,10 @@ class BookmarksController < ApplicationController
   def destroy
     @bookmark = Bookmark.find(params[:id])
     @bookmark.destroy
-    redirect_to favorite_apps_path
+    respond_to do |format|
+      format.html { redirect_to apps_path }
+      format.js
+    end
   end
 
   private
