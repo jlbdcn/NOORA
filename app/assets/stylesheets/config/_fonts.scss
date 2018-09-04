@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700');
 
 @font-face {
-  font-family: Sofia Pro;
+  font-family: "Sofia Pro";
   src: url('../fonts/sofia_pro_semi.otf') format("opentype"),
   url('../fonts/sofia_pro_semi.woff') format("woff"),
   url('../fonts/sofia_pro_semi.woff2') format("woff2");
@@ -11,9 +11,9 @@
 }
 
 @font-face {
-  font-family: Sofia Pro;
-  src: url('../fonts/sofia_pro_regular.otf') format("opentype"),
-  url('../fonts/sofia_pro_regular.woff') format("woff"),
+  font-family: "Sofia Pro";
+  src: url('/assets/fonts/sofia_pro_regular.otf') format("opentype"),
+  url('/assets/sofia_pro_regular.woff') format("woff"),
   url('../fonts/sofia_pro_regular.woff2') format("woff2");
   font-weight: normal;
   font-style: normal;

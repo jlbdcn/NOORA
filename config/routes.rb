@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   end
   resources :bookmarks, only: [:destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Google Authentication
+  get '/google_oauth2/get_google_access_code', to: 'google_authentications#get_google_access_code'
+  get '/google_oauth2/callback', to: 'google_authentications#callback'
 end

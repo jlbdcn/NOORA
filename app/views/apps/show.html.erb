@@ -11,7 +11,12 @@
               </div>
             </div>
               <%= link_to app_bookmarks_path(@app), method: "post", class: "button app-show__button", remote: true, authenticity_token: true do %>
-                Add to favorite
+                  Add to favorite
+              <% end %>
+              <% if @app.integrated %>
+                <%= link_to google_oauth2_get_google_access_code_path(app: @app), class: "button app-show__button" do %>
+                  Get real-time info
+                <% end %>
               <% end %>
               <%= link_to "More Information", @app.webpage_url, class: "button button-grey app-show__button", target: "_blank" %>
           </div>

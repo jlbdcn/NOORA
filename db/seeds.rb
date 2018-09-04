@@ -658,6 +658,15 @@ App.create!(
   category: legal
 )
 
+App.create!(
+  name: "Google Mail",
+  description: "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access. Meet your new inbox!",
+  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536075210/googlemail.png",
+  webpage_url: "https://www.google.com/gmail/",
+  category: project_management,
+  integrated: true
+)
+
 # Add screens
 AppScreen.create!(
   remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535619995/JIRA_screenshot_1.png",
