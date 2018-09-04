@@ -23,7 +23,23 @@
             <h1 class="app-show__heading"><%= @app.name %></h1>
 
 
-            <p class="app-show__category"> <strong>Category: </strong><%= @app.category&.name %></p>
+            <p class="app-show__category"><strong>Category: </strong><%= @app.category&.name %></p>
+              
+
+              <div >
+                <% if @app.reviews.present? %>
+                <div class="review__average-rating">
+                  <strong>Rating: </strong>
+                </div>
+
+                  <% @average.times do %>
+                      <i class="fa fa-star review__star" aria-hidden="true"></i>
+                    <% end %>
+                  <% else %>
+                    <p><strong>Rating: </strong>n/a</p>
+                  <% end %>
+              
+              </div>
 
 
             <div class="price-average-wrapper">
@@ -31,19 +47,9 @@
               <div>
                 <p class="app-show__price">
                   <strong>Price: </strong>
-                  <%= link_to "Free", "#", class: "app-show__price-link" %>
+                  <%= link_to "Free", "#", class: "app-show__price" %>
                 </p>
               </div>
-
-
-              <div>
-                <% if @app.reviews.present? %>
-                  <p><strong>Rating: </strong><%= @average %>/5</p>
-                <% else%>
-                  <p><strong>Rating: </strong>n/a</p>
-                <% end %>
-              </div>
-
 
             </div>
 
@@ -76,7 +82,7 @@
                 </div>
               <% end %>
 
-                <p><strong>Review</strong></p>
+                <p><strong>Review:</strong></p>
 
                 <div class="star-rating">
                   <input id="star-5" type="radio" name="review[rating]" value="5">
