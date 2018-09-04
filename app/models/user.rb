@@ -11,6 +11,8 @@ class User < ApplicationRecord
   validates :username, uniqueness: true
   validates :public_token, uniqueness: true
 
+  serialize :google_access_token, Hash
+
   private
 
   def generate_public_token
