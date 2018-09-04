@@ -73,6 +73,9 @@
         text-decoration: none;
       }
     }
+  .fas {
+    color: #e0e0e0;
+  }
 }
 .app-card__image {
   height: 120px;
@@ -97,6 +100,7 @@
 
 .app-card__category-tags-container {
    width: 100%;
+   font-weight: 300px;
    color: $gray;
    font-size: 12px;
    }

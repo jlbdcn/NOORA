@@ -88,11 +88,17 @@
   }
 }
 
+.nav-pills > li > a {
+    border-radius: 0px;
+    font-weight: 300;
+}
+
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-  color: $green;
+  color: $dark-gray;
   background-color: transparent !important;
-  font-weight: bold;
+  font-weight: 400;
   font-family: "Montserrat";
+  border-bottom: 3px solid $green;
   }
 
 .nav > li > a:hover, .nav > li > a:focus {
