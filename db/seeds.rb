@@ -74,7 +74,7 @@ development = Category.create!(
 App.create!(
   name: "todoist",
   description: "Life can feel overwhelming, but it doesn’t have to. Todoist lets you keep track of everything in one place, so you can get it all done and enjoy more peace of mind along the way.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391147/todoist.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134810/new%20logos/todoist.png",
   webpage_url: "https://todoist.com/",
   category: project_management
 )
@@ -82,7 +82,7 @@ App.create!(
 App.create!(
   name: "Trello",
   description: "Trello lets you work more collaboratively and get more done. Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391136/Trello.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134813/new%20logos/trello.png",
   webpage_url: "https://trello.com/",
   category: project_management
 )
@@ -90,7 +90,7 @@ App.create!(
 App.create!(
   name: "Asana",
   description: "Asana helps you coordinate all the work your team does together. So everyone knows what needs to get done, who’s responsible for doing it, and when it’s due.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391123/Asana.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134592/new%20logos/asana.png",
   webpage_url: "https://asana.com/",
   category: project_management
 )
@@ -98,7 +98,7 @@ App.create!(
 App.create!(
   name: "JIRA",
   description: "Jira Software is built for every member of your software team to plan, track, and release great software. Whether you’re a seasoned agile expert, or just getting started, Jira Software unlocks the power of agile.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391107/JIRA.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134668/new%20logos/jira.png",
   webpage_url: "https://www.atlassian.com/software/jira",
   category: project_management
 )
@@ -106,7 +106,7 @@ App.create!(
 App.create!(
   name: "Basecamp",
   description: "Basecamp is a cloud App that helps users manage projects and keep teams on the same page. Basecamp 3 is a system that enables users and companies to get organized, communicate with everyone easily, and collaborate on projects.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391098/Basecamp.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134632/new%20logos/basecamp.png",
   webpage_url: "https://basecamp.com/",
   category: project_management
 )
@@ -114,7 +114,7 @@ App.create!(
 App.create!(
   name: "iMacros",
   description: "The world's most popular web automation, data extraction, and web testing solution. Automate tasks across all major browsers. iMacros web automation software works with every website to make it easy for you to record and replay repetitious work.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391086/iMacros.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134661/new%20logos/imacros.png",
   webpage_url: "https://imacros.net/",
   category: automation
 )
@@ -122,7 +122,7 @@ App.create!(
 App.create!(
   name: "DataMiner",
   description: "Extract data from any website in seconds. Data Miner is a Google Chrome extension that helps you scrape data from web pages and into a CSV file or Excel spreadsheet.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391071/DataMiner.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134646/new%20logos/data_miner.png",
   webpage_url: "https://data-miner.io/",
   category: automation
 )
@@ -130,7 +130,7 @@ App.create!(
 App.create!(
   name: "autopilot",
   description: "Automate the entire customer journey with visual marketing automation software that helps you connect, and stay closer to your customers than ever before.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391062/autopilot.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134629/new%20logos/autopilot.png",
   webpage_url: "https://www.autopilothq.com/",
   category: marketing
 )
@@ -138,7 +138,7 @@ App.create!(
 App.create!(
   name: "genially",
   description: "The tool that brings contents to life. Discover the new generation of Presentations, Infographics, Dossiers, Video Presentations, ePosters, CVS, Quizzes, etc. Now anyone can create incredible visual stories and generate amazing communication experiences.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391048/genially.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134657/new%20logos/genially.png",
   webpage_url: "https://www.genial.ly/",
   category: design
 )
@@ -146,7 +146,7 @@ App.create!(
 App.create!(
   name: "Canva",
   description: "Easily create beautiful designs + documents. Use Canva's drag-and-drop feature and professional layouts to design consistently stunning graphics.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391035/Canva.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134640/new%20logos/canva.png",
   webpage_url: "https://www.canva.com/",
   category: design
 )
@@ -155,7 +155,7 @@ App.create!(
   name: "stickpng",
   description: "StickPNG is a vibrant community of creative people sharing transparent PNG images which you can download for free and use in your personal non-commercial or educational projects. Browse our categories below to find clipart with no background or curated cut out photos.
 ",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391022/stick_PNG.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134805/new%20logos/stick_png.png",
   webpage_url: "http://www.stickpng.com/",
   category: design
 )
@@ -163,7 +163,7 @@ App.create!(
 App.create!(
   name: "PayFit",
   description: "Paying your employees has never been easier. Focus on what matters most, PayFit automates your payroll process.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390993/PayFit.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134787/new%20logos/payfit.png",
   webpage_url: "https://payfit.com/en/",
   category: finance
 )
@@ -171,7 +171,7 @@ App.create!(
 App.create!(
   name: "Stripe",
   description: "Stripe is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390975/Stripe.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134807/new%20logos/stripe.png",
   webpage_url: "https://stripe.com/",
   category: finance
 )
@@ -179,7 +179,7 @@ App.create!(
 App.create!(
   name: "QuickBooks",
   description: "QuickBooks automates standard bookkeeping tasks such as entering transactions, performing calculations, and organizing data to keep your books balanced.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535391395/quickbooks_small.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134799/new%20logos/quickbooks.png",
   webpage_url: "https://quickbooks.intuit.com/oicms/t/qbks-1",
   category: finance
 )
@@ -187,7 +187,7 @@ App.create!(
 App.create!(
   name: "IPaidThat",
   description: "IPaidThat automatically imports the invoices you receive, and compare them with your bank transactions, to make sure you don't forget anything.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390961/iPaidThat.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134665/new%20logos/Ipaidthat.png",
   webpage_url: "https://ipaidthat.io/en/",
   category: finance
 )
@@ -196,7 +196,7 @@ App.create!(
   name: "made in law",
   description: "We re-invent the daily administrative management of your company. Online and paperless.
 Your decisions are now instructed online and with full security.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390947/made_in_law.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134670/new%20logos/madeinlaw.png",
   webpage_url: "https://madeinlaw.com/en/",
   category: legal
 )
@@ -204,7 +204,7 @@ Your decisions are now instructed online and with full security.",
 App.create!(
   name: "Figma",
   description: "Turn ideas into products faster. Design, prototype, and gather feedback all in one place with Figma.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390912/Figma.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134655/new%20logos/figma.png",
   webpage_url: "https://www.figma.com/",
   category: design
 )
@@ -213,7 +213,7 @@ App.create!(
   name: "DocuSign",
   description: "Move business forward securely and reliably
 Go digital with DocuSign. We’ll help you scale, even to a global level. It’s easy to start and easy to grow when you choose what Forrester Research* says is 'the strongest brand and market share leader: [DocuSign] is becoming a verb.'",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390893/DocuSign.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134651/new%20logos/docusign.png",
   webpage_url: "https://www.docusign.com/",
   category: legal
 )
@@ -509,7 +509,7 @@ App.create!(
 App.create!(
  name: "Vocus",
  description: "If you want a telco that’s as smart, nimble and high performing as your own business, then you’re in the right place.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390184/vocus.png",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134817/new%20logos/vocus.png",
  webpage_url: "https://www.vocus.com.au/",
  category: marketing
 )
@@ -517,7 +517,7 @@ App.create!(
 App.create!(
  name: "Pardot",
  description: "Pardot B2B marketing automation by Salesforce helps marketers create more leads, generate more pipeline, and empower sales to close more deals.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390166/pardot.png",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134802/new%20logos/salesforce.png",
  webpage_url: "https://www.pardot.com/",
  category: marketing
 )
@@ -525,7 +525,7 @@ App.create!(
 App.create!(
  name: "Infusionsoft",
  description: "Use Infusionsoft to automate your small business sales and marketing, while combining your CRM, email marketing, lead capture and e-commerce in one place.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390149/infusionsoft.jpg",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134663/new%20logos/infusion_soft.png",
  webpage_url: "https://www.infusionsoft.com/",
  category: marketing
 )
@@ -533,7 +533,7 @@ App.create!(
 App.create!(
  name: "Renderforest",
  description: "Renderforest is a free online animated video maker. We help you to create slideshows, promotional and explainer business videos, intros and more.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390133/renderforest.png",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134801/new%20logos/renderforest.png",
  webpage_url: "https://www.renderforest.com/",
  category: marketing
 )
@@ -549,7 +549,7 @@ App.create!(
 App.create!(
  name: "Ontraport",
  description: "Ontraport is the most powerful visual marketing automation and reporting platform in the world.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390109/ontraport.jpg",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134688/new%20logos/ontraport.png",
  webpage_url: "https://ontraport.com/",
  category: marketing
 )
@@ -557,7 +557,7 @@ App.create!(
 App.create!(
  name: "Pipedrive",
  description: "Try Pipedrive, the #1 user-rated CRM tool. Grow your sales today.",
- remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390064/Pipedrive_logo.png",
+ remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134797/new%20logos/pipedrive.png",
  webpage_url: "https://www.pipedrive.com/",
  category: marketing
 )
@@ -573,7 +573,7 @@ App.create!(
 App.create!(
   name: "Dribbble",
   description: "Dribbble is where designers get inspired and hired. Dribbble is an online community for showcasing user-made artwork. It functions as a self-promotion and networking platform for graphic design, web design, illustration, photography, and other creative areas.It is one of the largest platforms for designers to share their work online[2] competing directly with Adobe-owned Behance — the latter being the largest",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535390010/dribbble_logo.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134653/new%20logos/dribbble.png",
   webpage_url: "https://dribbble.com/",
   category: design
 )
@@ -581,7 +581,7 @@ App.create!(
 App.create!(
   name: "Coverr",
   description: "Download royalty free (for personal and commercial use), unique and beautiful video footage for your website or any project. No attribution required. Coverr is a resource for FREE stock videos, no catch! No registration required. Coverrs are videos that are made to fit as a beautiful video background but you can use them for any need, including for commercial and noncommercial use.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389997/coverr_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134644/new%20logos/coverr.png",
   webpage_url: "https://coverr.co/",
   category: photography
 )
@@ -589,7 +589,7 @@ App.create!(
 App.create!(
   name: "Pexels",
   description: "Free stock photos in one place. Pexels helps designers, bloggers and everyone who is looking for an image to find great photos that you can use everywhere for free.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389984/pexels_logo.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134795/new%20logos/pexels.png",
   webpage_url: "https://www.pexels.com/",
   category: photography
 )
@@ -597,7 +597,7 @@ App.create!(
 App.create!(
   name: "The Noun Project",
   description: "Find over a million curated icons, created by a global community. The Noun Project aggregates and catalogs symbols that are created and uploaded by graphic designers around the world. The project functions both as a resource for people in search of typographic symbols and a design history of the genre",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389966/thenounproject_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134809/new%20logos/the_noun_project.png",
   webpage_url: "https://thenounproject.com/",
   category: design
 )
@@ -605,7 +605,7 @@ App.create!(
 App.create!(
   name: "Coolors",
   description: "Generate perfect color combinations for your designs. Coolors is a super-fast color scheme generator,used everyday by more than 500.000 creative people. Generate color schemes at lightspeed just by tapping on the screen. Type in your colors to get nice matching color combinations instantly or browse thousands of popular palettes made by other cool creatives. Save your favorite in your account or copy, export or send",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389949/coolors_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134642/new%20logos/coolors.png",
   webpage_url: "https://coolors.co/",
   category: design
 )
@@ -613,7 +613,7 @@ App.create!(
 App.create!(
   name: "uiGradients",
   description: "A handpicked collection of beautiful color gradients for designers and developers. Looking for cool gradients for your graphic, web or UI design? uiGradients is a useful online tool – a free collection of over 260 linear gradients that you can use for design and code. You can browse gradients by color, copy their hexadecimal or CSS codes, and even download a .JPG version of each one.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389937/uigradients_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134815/new%20logos/uigradient.png",
   webpage_url: "https://uigradients.com/",
   category: design
 )
@@ -621,7 +621,7 @@ App.create!(
 App.create!(
   name: "Calltoidea",
   description: "Calltoidea is the unique place where you can find inspiration. A great tool created by a deisnger for web professionals. Call To Idea offers quick inspiration for virtually any UI element you might want. There are categories for logins, registrations, footers, calendars, stats, mailings, counters, forms, and much more. Just click on a category to see tons of examples of whatever UI element or pattern you're looking to create.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389925/calltoidea_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134638/new%20logos/calltoidea.png",
   webpage_url: "https://calltoidea.com/",
   category: design
 )
@@ -629,7 +629,7 @@ App.create!(
 App.create!(
   name: "Sketchboard",
   description: "Sketchboard is an endless online whiteboard, powered by your team's ideas. Work with your team in real time and get immediate feedback. Sketchboard is an Online drawing tools for finding new ideas and after work in a team and get a review. It's also facilitated to build a good communication between team members, present their ideas, powering up brainstorming, UX flow, collaborative mindmaps, find the error and sketch roadmaps.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389902/sketchboard_logo.jpg",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134804/new%20logos/sketchboard.png",
   webpage_url: "https://sketchboard.io/",
   category: design
 )
@@ -637,7 +637,7 @@ App.create!(
 App.create!(
   name: "Docracy",
   description: "Analize contract s and legal work with AI. Docracy is a home for contracts and other legal documents, socially curated by the communities that use them. Our mission is to make these documents freely available for everyone, while in the process making them easier to customize and use. No more shady templates behind a paywall where you click download and just hope for the best. Instead we offer reputable, transparent sources and social proof to help you find something as close as possible to the perfect document.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389879/Docracy_logo.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134648/new%20logos/docrazy.png",
   webpage_url: "https://www.docracy.com/",
   category: legal
 )
@@ -645,7 +645,7 @@ App.create!(
 App.create!(
   name: "iubenda",
   description: "Attorney-level solutions to make your websites and apps compliant with the law across multiple countries and legislations. Easily make your organization GDPR compliant by generating a self-updating privacy and cookie policy for your site and app, by implementing a cookie notice with prior blocking, by recording proof of consent via the Consent Solution API and by documenting your data processing activity with iubenda's Internal Privacy Management solution",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389813/iubenda_logo.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134667/new%20logos/iubenda.png",
   webpage_url: "https://www.iubenda.com/",
   category: legal
 )
@@ -653,7 +653,7 @@ App.create!(
 App.create!(
   name: "Bonsai",
   description: "Go from proposal to payment to tax season without headaches. Bonsai guide freelancers through necessary business operations with two products: a plain-English contract template tool, and a simple invoicing system to process invoices that the freelancer can create and send themselves..The contract creation tool is designed to help freelancers draft professional contracts with fill-in-the-blank style templates. Contracts can get tricky. Who owns the intellectual property? How do I ensure I'm not getting underpaid, or overcharging a client for work? Should I ask for a deposit up front? Bonsai steps in with helpful pro tips that show up throughout the contract creation process, sourcing answers from lawyers in every country where the service operates. The invoicing tool allows freelancers to create and send their own invoices, and is integrated with Stripe, PayPal and Coinbase. The system also sends smart reminders to clients to ensure on-time payment.",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535389792/Bonsai_logo.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134633/new%20logos/bonsai.png",
   webpage_url: "https://www.hellobonsai.com/",
   category: legal
 )
@@ -661,7 +661,7 @@ App.create!(
 App.create!(
   name: "Google Mail",
   description: "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access. Meet your new inbox!",
-  remote_logo_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536075210/googlemail.png",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134659/new%20logos/gmail.png",
   webpage_url: "https://www.google.com/gmail/",
   category: project_management,
   integrated: true
