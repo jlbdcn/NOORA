@@ -1,9 +1,9 @@
 class App < ApplicationRecord
   include PgSearch
   belongs_to :category
-  has_many :bookmarks
+  has_many :bookmarks, dependent: :destroy
   has_many :app_tags
-  has_many :reviews, dependent: :destroy
+  has_many :reviews
   has_many :tags, through: :app_tags
   has_many :app_screens
   mount_uploader :logo, LogoUploader
