@@ -12,27 +12,27 @@
         <div class="col-xs-6 col-sm-4 col-md-3">
           <%= link_to app_path(app) do %>
             <div class="app-card" id="js-bookmark-hook-<%= app.id %>">
-              <% if app.app_screens.first.present? && !app.app_screens.first.url.nil? %>
-                <div class="app-card__image" style="background-image: url('<%= app.app_screens.first.url %>')">    </div>
-              <% else %>
-                <div class="app-card__image" style="background-image: url('<%= app.logo %>')"></div>
-              <% end %>
+              <div class="app-card__image" style="background-image: url('<%= app.logo %>')"></div>
               <div class="app-card__content">
                 <div class="app-card__title">
                   <h5><%= app.name %></h5>
                 </div>
                 <div class="app-card__category-tags-container">
                   <p class="app-card__category"><i class="fas fa-tag"></i> <%= app.category.name %></p>
-                  <i class="fas fa-star"></i><span class="bookmarks-nb"> <%= app.bookmarks.count %></span>
+                  <i class="fas fa-heart"></i><span class="bookmarks-nb"> <%= app.bookmarks.count %></span>
                 </div>
                 <div class="app-card__description">
                   <p class="short-description"> <%= app.description[0..100] %>...<b> More info</b></p>
                 </div>
               </div>
               <div class="icons-container">
-                <div class="star-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
-                  <%= link_to bookmarkerr_path(app), method: :get, remote: :true, class: "empty-star-display empty-star" do %>
-                      <i class="fa-star <%= current_user.apps.include? app ? 'fas' : 'far' %>"></i>
+                <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
+                  <%= link_to bookmarkerr_path(app), method: :get, remote: :true do %>
+                    <% if current_user.apps.include? app %>
+                       <i class="fas fa-heart"></i>
+                    <% else %>
+                       <i class="far fa-heart"></i>
+                    <% end %>
                   <% end %>
                 </div>
               </div>
