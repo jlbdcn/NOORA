@@ -30,9 +30,9 @@
                   <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
                     <%= link_to bookmarkerr_path(app), method: :get, remote: :true do %>
                       <% if current_user.apps.include? app %>
-                        <i class=“fas fa-heart”></i>
+                        <i class="fas fa-heart"></i>
                       <% else %>
-                        <i class=“far fa-heart”></i>
+                        <i class="far fa-heart"></i>
                       <% end %>
                     <% end %>
                   </div>
