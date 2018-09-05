@@ -7,7 +7,7 @@ class BookmarksController < ApplicationController
       if current_user.bookmarks.map(&:app).include?(@app)
           @bookmark = Bookmark.where(user: current_user, app: @app)[0]
           @bookmark.destroy
-          @message = "Application has been destroyed"
+          @message = "Application has been removed from your favorites."
       else
           @bookmark = Bookmark.new(user: current_user, app: @app)
           if @bookmark.save
