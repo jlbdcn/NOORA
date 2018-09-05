@@ -31,9 +31,9 @@
               </div>
               <div class="icons-container">
                 <div class="star-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
-                    <%= link_to bookmarkerr_path(app), method: :get, remote: :true, class: "empty-star-display empty-star" do %>
-                        <i class="fa-star <%= (current_user.apps.include? app) ? 'fas' : 'far' %>"></i>
-                    <% end %>
+                  <%= link_to bookmarkerr_path(app), method: :get, remote: :true, class: "empty-star-display empty-star" do %>
+                      <i class="fa-star <%= current_user.apps.include? app ? 'fas' : 'far' %>"></i>
+                  <% end %>
                 </div>
               </div>
             </div>
