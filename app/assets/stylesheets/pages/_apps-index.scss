@@ -135,26 +135,32 @@
     min-height: 0;
     min-width: 0;  /* NEW; needed for Firefox */
 
-  .box-features{
-    margin: 5px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+}
+
+.box-features {
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.box-features__main {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+  .one-b {
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 1;
   }
-}
 
-.one-b {
-  grid-row: 1 / span 2;
-  grid-column: 1 / span 1;
-}
+  .two-b {
+    grid-row: 1/ span 1;
+    grid-column: 2 / span 1;
+  }
 
-.two-b {
-  grid-row: 1/ span 1;
-  grid-column: 2 / span 1;
-}
-
-.three-b {
-  grid-row: 2 / span 1;
-  grid-column: 2 / span 1;
-}
+  .three-b {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+  }
