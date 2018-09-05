@@ -5,7 +5,11 @@ class GoogleAuthenticationsController < ApplicationController
     @bookmark = Bookmark.new(app: App.find(params[:app]))
     @bookmark.user = current_user
     @bookmark.save
-    redirect_to get_google_auth_url
+    if current_user.google_access_token.nil? || current_user.google_access_token.empty?
+      redirect_to get_google_auth_url
+    else
+      redirect_to favorite_apps_path
+    end
   end
 
   def callback
