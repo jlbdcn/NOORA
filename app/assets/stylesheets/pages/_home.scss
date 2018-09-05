@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
+  width:30%;
   //cancel the marge of the text
   h1{
     margin: 0px !important;
@@ -41,5 +42,89 @@
   position: relative;
   left: 125px;
   top: 20px;
+}
+
+.value {
+  height: 1000px;
+    background-image: url("home-back.svg");
+    background-size: cover;
+
+}
+
+.grid {
+    display: grid;
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 75%;
+    width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  min-height: 0;  /* NEW */
+  min-width: 0;   /* NEW; needed for Firefox */
+}
+
+.box{
+  margin: 25px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.value-icon {
+  width: 100%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:35%;
+}
+
+.one {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+
+  .value-icon {
+    background-image: url("find.png");
+  }
+}
+
+.two {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  .value-icon {
+    background-image: url("bookmark.png");
+  }
+}
+
+.three {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+  .value-icon {
+    background-image: url("update.png");
+  }
+}
+
+.four {
+  grid-row: 2 / span 1;
+  grid-column: 2 / span 1;
+  .value-icon {
+    background-image: url("share.png");
+  }
+}
+
+.value-text{
+  color: #8E2DE2;
+  text-align: center;
+
+  .value-text__strong{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 75px;
+  }
+
 }
 
