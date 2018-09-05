@@ -7,7 +7,7 @@
         <div class="app-card__visible" style="background-image: url('<%= app.logo %>')">
           <!-- hovered part -->
         </div>
-          <% if app.integrated %>
+          <% if app.integrated%>
             <div class="app-card__notification">
               <%= GmailApiRequests.new(user: current_user).call %>
             </div>

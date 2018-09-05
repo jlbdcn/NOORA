@@ -39,7 +39,6 @@ class GmailApiRequests
       @user.update(google_access_token: new_token.to_hash)
       token = new_token
     end
-
     token
   end
 end
