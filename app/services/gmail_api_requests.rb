@@ -15,7 +15,7 @@ class GmailApiRequests
 
   def token_from(token_hash)
 
-    client = OAuth2::Client.new(
+    client_request = OAuth2::Client.new(
       ENV['GOOGLE_CLIENT_ID'],
       ENV['GOOGLE_CLIENT_SECRET'],
       {
@@ -23,7 +23,7 @@ class GmailApiRequests
       }
     )
 
-    token = OAuth2::AccessToken.from_hash(client, token_hash)
+    token = OAuth2::AccessToken.from_hash(client_request, token_hash)
 
     if token.expired?
       client = OAuth2::Client.new(
@@ -35,9 +35,11 @@ class GmailApiRequests
           token_url: "/o/oauth2/token"
         }
       )
+      token = OAuth2::AccessToken.from_hash(client, refresh_token: token_hash[:refresh_token])
       new_token = token.refresh!
       @user.update(google_access_token: new_token.to_hash)
-      token = new_token
+      token_hash = @user.google_access_token
+      token_from(token_hash)
     end
     token
   end
