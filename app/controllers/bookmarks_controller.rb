@@ -36,6 +36,7 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.find(params[:id])
     @bookmark.destroy
     respond_to do |format|
+      raise
       format.html { redirect_to favorite_apps_path }
       format.js
     end

@@ -16,7 +16,7 @@
              <%= image_tag 'card-icons/info-icon.png', class: "app-card__hidden fav-icon__info" %>
           <% end %>
           <%= link_to bookmark_path(current_user.bookmarks.where(app: app)[0]), method: "delete" do %>
-             <%= image_tag 'card-icons/trash-icon.png', class: "app-card__hidden fav-icon__trash" %>
+            <%= image_tag 'card-icons/trash-icon.png', class: "app-card__hidden fav-icon__trash" %>
           <% end %>
       </div>
     <% end %>
