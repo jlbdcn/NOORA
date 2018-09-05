@@ -114,8 +114,12 @@
 .bookmark-container {
   display: inline;
   position: relative;
+      right: 35px;
+    top: 10px;
 }
 
+
+// Here start the grid
 
 .features {
   padding-left: 21px;
@@ -128,13 +132,14 @@
     padding-right: 5px;
     margin-left: auto;
     margin-right: auto;
+    grid-column-gap: 30px;
     height: 100%;
     width: 100%;
+    grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     min-height: 0;
-    min-width: 0;  /* NEW; needed for Firefox */
-
+    min-width: 0;
 }
 
 .box-features {
@@ -145,10 +150,22 @@
 }
 
 .box-features__main {
+  position: relative;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
+  background-position: left;
+  background-size: cover;
+  border-radius: 5px;
+  height: 100%;
+
+  .h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: $gray;
+  }
 }
+
+
 
   .one-b {
     grid-row: 1 / span 2;
