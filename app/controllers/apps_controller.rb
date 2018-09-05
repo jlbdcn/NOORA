@@ -2,6 +2,11 @@ class AppsController < ApplicationController
   before_action :set_app, only: [:show]
   skip_before_action :authenticate_user!, only: [:index, :show, :shared_apps]
 
+  def new
+    @new_app = App.new
+    # before saving check out by admin
+  end
+
   def index
     if params[:category].present?
       @apps = App.joins(:category).where(categories: { name: params[:category] })
