@@ -27,9 +27,13 @@
               </div>
               <div class="icons-container">
                 <% if current_user %>
-                  <div class="star-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
-                    <%= link_to bookmarkerr_path(app), method: :get, remote: :true, class: "empty-star-display empty-star" do %>
-                        <i class="fa-star <%= current_user.apps.include? app ? 'fas' : 'far' %>"></i>
+                  <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
+                    <%= link_to bookmarkerr_path(app), method: :get, remote: :true do %>
+                      <% if current_user.apps.include? app %>
+                        <i class=“fas fa-heart”></i>
+                      <% else %>
+                        <i class=“far fa-heart”></i>
+                      <% end %>
                     <% end %>
                   </div>
                 <% end %>
