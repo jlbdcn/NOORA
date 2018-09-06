@@ -9,8 +9,6 @@ class App < ApplicationRecord
   mount_uploader :logo, LogoUploader
 
   validates :name, presence: true, uniqueness: true
-  validates :description, presence: true
-  validates :logo, presence: true
   validates :webpage_url, presence: true
 
   pg_search_scope :search_by_tag_and_category,

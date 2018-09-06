@@ -4,7 +4,12 @@ class AppsController < ApplicationController
 
   def new
     @new_app = App.new
-    # before saving check out by admin
+  end
+
+  def create
+    new_app = App.new(app_params)
+    new_app.save
+    redirect_to apps_path
   end
 
   def index

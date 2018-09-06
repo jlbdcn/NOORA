@@ -1,37 +1,44 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-6 col-xs-offset-3 form">
-      <h2 class="h2">Submit a new app</h2>
+      <h2 class="h2">Submit an app</h2>
 
       <%= simple_form_for(@new_app) do |f| %>
 
         <div class="form-inputs">
           <%= f.input :name,
                       required: true,
-                      placeholder: "name of the app",
+                      placeholder: "Add the name",
                       label: false %>
 
           <%= f.input :webpage_url,
                       required: true,
-                      placeholder: "url of the app",
-                      label: false %>
-          <%= f.input :description,
-                      required: false,
-                      placeholder: "add a description",
+                      placeholder: "Add the url",
                       label: false %>
 
+          <%= f.input :description,
+                      required: false,
+                      placeholder: "Add a description",
+                      label: false %>
 
          <%= f.input :logo,
                       label: false %>
           <label for="file-upload" class="custom-file-upload">
-              <i class="fa fa-cloud-upload"></i> upload logo
+            <i class="fa fa-cloud-upload"></i> upload the logo
           </label>
           <input id="file-upload" type="file"/>
         </div>
 
         <div class="form-actions">
           <%= f.button :submit, "Submit", class: "form-button button"%>
+        </div>
       <% end %>
+      <br />
+      <p style="font-size: 14px;"> We will get back to you and upload the subimitted app after review. Thank you for your contribution!
+      <hr>
+        <%= link_to apps_path do %>
+          <i class="fa fa-history"></i> Back to Homepage
+        <% end %>
     </div>
   </div>
 </div>

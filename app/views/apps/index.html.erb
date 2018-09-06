@@ -72,13 +72,21 @@
           <% end %>
         </div>
       <% end %>
-    </div>
-    <div class="row">
-      <div>
-        <%= link_to new_app_path, class: "button submit-btn" do %>
-          Submit a new app
-        <% end %>
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <div class="app-card">
+          <div class="app-card__submit-content">
+            <div class="app-card___submit-description">
+              <p> Didn't find what you're looking for ?</p>
+            </div>
+            <div class="btn-submit__container">
+              <%= link_to new_app_path, class: "button submit-btn app-card__btn" do %>
+                Submit an app
+              <% end %>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
