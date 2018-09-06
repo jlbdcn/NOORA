@@ -32,9 +32,13 @@
 
 
     <div class="row">
-
-        <h2 class="h2"> Discover our selection </h2>
-
+        <% if @query %>
+          <h2 class="h2">Search results for: "<%= @query %>"</h2>
+        <% elsif @category %>
+          <h2 class="h2">Category: <%= @category %></h2>
+        <% else %>
+          <h2 class="h2"> Discover our selection </h2>
+        <% end %>
     </div>
 
     <div class="row">
