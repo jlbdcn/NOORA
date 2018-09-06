@@ -64,15 +64,17 @@
                 </div>
               </div>
               <div class="icons-container">
-                <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
-                  <%= link_to bookmarkerr_path(app), method: :get, remote: :true do %>
-                    <% if current_user.apps.include? app %>
-                       <i class="fas fa-heart"></i>
-                    <% else %>
-                       <i class="far fa-heart"></i>
+                <% if current_user %>
+                  <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
+                    <%= link_to bookmarkerr_path(app), method: :get, remote: :true do %>
+                      <% if current_user.apps.include? app %>
+                        <i class="fas fa-heart"></i>
+                      <% else %>
+                        <i class="far fa-heart"></i>
+                      <% end %>
                     <% end %>
-                  <% end %>
-                </div>
+                  </div>
+                <% end %>
               </div>
             </div>
           <% end %>
