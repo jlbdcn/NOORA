@@ -9,12 +9,7 @@
         </div>
           <% if app.integrated%>
             <div class="app-card__notification">
-              <% begin %>
-                <%= GmailApiRequests.new(user: current_user).call %>
-              <% rescue ActionView::Template::Error %>
-                <% current_user.update(google_access_token: nil) %>
-                <% redirect_uri google_oauth2_get_google_access_code_path(app: App.find_by_name("Google Mail") %>
-              <% end %>
+             <%= @gmail_response %>
             </div>
           <% end %>
           <%= link_to app_path(app) do %>
