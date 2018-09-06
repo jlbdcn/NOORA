@@ -45,9 +45,12 @@ a {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.1);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   color: black;
+
     &:hover {
+
        height: 240px;
        box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+
       .app-card__content {
         width: 100%;
         font-size: 14px;
@@ -69,18 +72,15 @@ a {
       }
 
       .icons-container {
-        display: flex;
+        //It should be something here
       }
 
       .bookmarks-nb {
         display: none;
       }
-
-      a {
-        text-decoration: none !important;
-      }
     }
 }
+
 .app-card__image {
   height: 120px;
   background-position: center;
@@ -103,11 +103,15 @@ a {
 }
 
 .app-card__category-tags-container {
-   width: 100%;
-   font-weight: 300px;
-   color: $gray;
-   font-size: 12px;
-   }
+  width: 100%;
+  font-weight: 300px;
+  color: $light-gray;
+  font-size: 12px;
+
+  //Ajout pour mettre le nb de coeur et favorite together
+  display: flex;
+  justify-content: space-between;
+}
 
 .app-card__content {
   color: black;
@@ -131,6 +135,7 @@ a {
   padding-left: 21px;
   height: 65vh;
   margin-top: 15px;
+  min-width: 400px;
 }
 
 .grid-features {
@@ -144,8 +149,8 @@ a {
     grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    min-height: 0;
-    min-width: 0;
+    min-height: 0px;
+    min-width: 0px;
 }
 
 .box-features {
