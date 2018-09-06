@@ -21,7 +21,7 @@ class GetGoogleAuthToken
   def get_token
     token = @client.auth_code.get_token(
       @user.google_access_code,
-      redirect_uri: 'https://noora.app/google_oauth2/callback'
+      redirect_uri: 'https://www.noora.app/google_oauth2/callback'
     )
     return token
   end
