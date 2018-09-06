@@ -72,11 +72,19 @@ a {
       }
 
       .icons-container {
-        //It should be something here
-      }
+        display: flex;
+        position: relative;
+        left: 30px;
+        bottom: 20px;
 
+      }
+      .bookmark-container {
+        position: relative;
+        left: 155px;
+      }
       .bookmarks-nb {
         display: none;
+
       }
     }
 }
@@ -96,9 +104,6 @@ a {
 }
 
 .icons-container {
-  position: absolute;
-  top: 40px;
-  right: 40px;
   display: none;
 }
 
@@ -120,13 +125,6 @@ a {
 
 .app-card__category {
   margin: 0;
-}
-
-.bookmark-container {
-  display: inline;
-  position: relative;
-  right: 35px;
-  top: 10px;
 }
 
 .btn-submit__container {

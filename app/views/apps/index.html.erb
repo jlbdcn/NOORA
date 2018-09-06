@@ -47,29 +47,6 @@
           <%= link_to app_path(app) do %>
             <div class="app-card" id="js-bookmark-hook-<%= app.id %>">
               <div class="app-card__image" style="background-image: url('<%= app.logo %>')"></div>
-              <div class="app-card__content">
-                <div class="app-card__title">
-                  <h5><%= app.name %></h5>
-                </div>
-                <div class="app-card__category-tags-container">
-
-                  <p class="app-card__category">
-                    <i class="fas fa-tag"></i> <%= app.category.name %> </p>
-
-
-                  <!-- changement pour avoir une jolie carte. voir aussi le css  -->
-
-                  <p class="bookmarks-nb"> <i class="fas fa-heart"></i> <%= app.bookmarks.count %> </p>
-
-                  <!-- Ce qu'il y avait avant: -->
-
-                  <!-- <i class="fas fa-heart"> <span class="bookmarks-nb"> </i> <%= app.bookmarks.count %> </span> -->
-
-                </div>
-                <div class="app-card__description">
-                  <p class="short-description"> <%= app.description[0..100] %>...<b> More info</b></p>
-                </div>
-              </div>
               <div class="icons-container">
                 <% if current_user %>
                   <div class="bookmark-container bookmarke<%= current_user.apps.include? app ? 'active' : '' %>">
@@ -83,6 +60,20 @@
                   </div>
                 <% end %>
               </div>
+              <div class="app-card__content">
+                <div class="app-card__title">
+                  <h5><%= app.name %></h5>
+                </div>
+                <div class="app-card__category-tags-container">
+                  <p class="app-card__category">
+                    <i class="fas fa-tag"></i> <%= app.category.name %> </p>
+                  <p class="bookmarks-nb"> <i class="fas fa-heart"></i> <%= app.bookmarks.count %> </p>
+                </div>
+                <div class="app-card__description">
+                  <p class="short-description"> <%= app.description[0..100] %>...<b> More info</b></p>
+                </div>
+              </div>
+
             </div>
           <% end %>
         </div>
