@@ -44,9 +44,14 @@
 }
 
 .value {
-  height: 1000px;
+  height: 1200px;
   background-size: cover;
-
+  h2 {
+    color: white;
+    position: relative;
+    top: 180px;
+    text-align: center;
+  }
 }
 
 .grid {
@@ -115,8 +120,21 @@
 
 .icon-panel {
   height: 1250px;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: 1000px auto;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 60px;
+  }
+}
+
+.sign-up-landing {
+  width: 250px;
+  position: absolute;
+  top: 1070px;
 }
 
