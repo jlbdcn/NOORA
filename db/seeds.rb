@@ -669,62 +669,56 @@ App.create!(
 
 # Add screens
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535619995/JIRA_screenshot_1.png",
-  description: "Plan and Track",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242545/Screen_Shot_2018-09-05_at_15.05.18.png",
+  description: "",
   app: App.find_by_name("JIRA")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535619998/JIRA_screenshot_2.png",
-  description: "Release and Report",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242545/Screen_Shot_2018-09-05_at_15.00.50.png",
+  description: "",
   app: App.find_by_name("JIRA")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709012/Trello_screenshot_1.jpg",
-  description: "Track your tasks",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242545/Screen_Shot_2018-09-05_at_15.04.42.png",
+  description: "",
+  app: App.find_by_name("JIRA")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242625/Screen_Shot_2018-09-05_at_15.09.18.png",
+  description: "",
   app: App.find_by_name("Trello")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709013/Trello_screenshot_2.jpg",
-  description: "Information at a glance",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242626/Screen_Shot_2018-09-05_at_15.09.55.png",
+  description: "",
   app: App.find_by_name("Trello")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709015/Trello_screenshot_3.jpg",
-  description: "Work with any team",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242626/Screen_Shot_2018-09-05_at_15.09.35.png",
+  description: "",
   app: App.find_by_name("Trello")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_1.png",
-  description: "See all tasks",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242660/Screen_Shot_2018-09-05_at_15.06.25.png",
+  description: "",
   app: App.find_by_name("Asana")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_2.png",
-  description: "Track responsibilities",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242660/Screen_Shot_2018-09-05_at_15.07.43.png",
+  description: "",
   app: App.find_by_name("Asana")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_3.png",
-  description: "Plan from beginning to end",
-  app: App.find_by_name("Asana")
-)
-
-AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_4.png",
-  description: "View your teams' milestones",
-  app: App.find_by_name("Asana")
-)
-
-AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1535709205/Asana_screenshot_5.png",
-  description: "Find out if everything is going according to plan",
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242660/Screen_Shot_2018-09-05_at_15.06.50.png",
+  description: "",
   app: App.find_by_name("Asana")
 )
 
