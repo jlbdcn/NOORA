@@ -8,12 +8,14 @@ class AppsController < ApplicationController
   end
 
   def index
+    @featured = false
     if params[:category].present?
       @apps = App.joins(:category).where(categories: { name: params[:category] })
     elsif params[:query].present?
       @apps = App.search_by_tag_and_category(params[:query])
     else
       @apps = App.all
+      @featured = true
     end
   end
 
