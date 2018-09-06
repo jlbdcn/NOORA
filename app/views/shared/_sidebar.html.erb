@@ -6,6 +6,19 @@
     <% end %>
   </div>
     <ul>
+      <li class="sidebar__search">
+        <div class="sidebar__search-bar">
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <%= form_tag apps_path, method: :get do %>
+            <%= text_field_tag :query,
+              params[:query],
+              autocomplete: :off,
+              class: "form-control form-search sidebar__search-bar-input",
+              placeholder: "Find an app..."
+            %>
+          <% end %>
+        </div>
+      </li>
       <% if user_signed_in? %>
         <li class="sidebar__favorite">
           <%= link_to favorite_apps_path do %>
@@ -26,17 +39,4 @@
           </li>
       <% end %>
     </ul>
-  <div class="sidebar__search">
-    <div class="sidebar__search-bar">
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <%= form_tag apps_path, method: :get do %>
-        <%= text_field_tag :query,
-          params[:query],
-          autocomplete: :off,
-          class: "form-control form-search sidebar__search-bar-input",
-          placeholder: "Find an app..."
-        %>
-      <% end %>
-    </div>
-  </div>
 </div>

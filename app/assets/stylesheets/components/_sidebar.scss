@@ -38,6 +38,7 @@
   &:hover {
     width: 270px;
     box-shadow: 1px 0 20px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
     .sidebar__category-name {
       opacity: 1;
     }
@@ -47,6 +48,10 @@
     .sidebar__search {
       opacity: 1;
       transition: all 0.3s ease 0.03s;
+      background: none;
+    }
+    li {
+      padding-right: 15px;
     }
   }
 }
@@ -79,12 +84,10 @@
 }
 
 .sidebar__search {
-  height: 50px;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  height: 64px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.01), 0 1px 0 0 rgba(0, 0, 0, 0.01);
   opacity: 0;
   align-items: center;
-  position: absolute;
-  top: calc(100vh - 50px);
   width: 100%;
   display: flex;
   background-color: white;
@@ -119,7 +122,6 @@
 
 .sidebar__favorite {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.01), 0 1px 0 0 rgba(0, 0, 0, 0.01);
-  margin-top: 15px;
 }
 
 .sidebar-icon {
@@ -136,4 +138,8 @@
 
 .sidebar-icon-hover {
   display: none;
+}
+
+.sidebar__search-placeholder {
+  height: 50px;
 }
