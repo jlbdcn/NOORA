@@ -6,7 +6,7 @@ class GmailApiRequests
 
   def call
     response_object = @token.get(
-      '/gmail/v1/users/me/labels/UNREAD'
+    '/gmail/v1/users/me/labels/UNREAD'
     )
     return JSON.parse(response_object.body)["messagesUnread"]
   end

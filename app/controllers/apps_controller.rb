@@ -40,6 +40,14 @@ class AppsController < ApplicationController
 
   def favorite
     @apps = current_user.apps
+    if @apps.include? App.find_by_name("Google Mail")
+      begin
+        @gmail_response =  GmailApiRequests.new(user: current_user).call
+      rescue Exception
+        current_user.update(google_access_token: nil)
+        redirect_to google_oauth2_get_google_access_code_path(app: App.find_by_name("Google Mail"))
+      end
+    end
   end
 
   def shared_apps
