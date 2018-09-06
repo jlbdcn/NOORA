@@ -727,3 +727,1273 @@ AppScreen.create!(
   description: "Find out if everything is going according to plan",
   app: App.find_by_name("Asana")
 )
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536226666/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.19.07.png",
+  description: "",
+  app: App.find_by_name("Ahoy.Ai")
+)
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536226666/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.17.34.png",
+  description: "",
+  app: App.find_by_name("Ahoy.Ai")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536226666/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.18.16.png",
+  description: "",
+  app: App.find_by_name("Ahoy.Ai")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227150/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.28.18.png",
+  description: "",
+  app: App.find_by_name("DataMiner")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227150/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.28.05.png",
+  description: "",
+  app: App.find_by_name("DataMiner")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227150/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.27.37.png",
+  description: "",
+  app: App.find_by_name("DataMiner")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227338/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.25.51.png",
+  description: "",
+  app: App.find_by_name("foulefactory")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227338/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.25.35.png",
+  description: "",
+  app: App.find_by_name("foulefactory")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227338/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.26.17.png",
+  description: "",
+  app: App.find_by_name("foulefactory")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227804/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.23.47.png",
+  description: "",
+  app: App.find_by_name("IFTTT")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227804/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.24.21.png",
+  description: "",
+  app: App.find_by_name("IFTTT")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227804/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.23.23.png",
+  description: "",
+  app: App.find_by_name("IFTTT")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227882/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.29.40.png",
+  description: "",
+  app: App.find_by_name("iMacros")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227882/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.29.09.png",
+  description: "",
+  app: App.find_by_name("iMacros")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536227883/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.30.04.png",
+  description: "",
+  app: App.find_by_name("iMacros")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536228098/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.20.01.png",
+  description: "",
+  app: App.find_by_name("Julie Desk")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536228099/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.20.42.png",
+  description: "",
+  app: App.find_by_name("Julie Desk")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536228099/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.20.26.png",
+  description: "",
+  app: App.find_by_name("Julie Desk")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229460/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.22.18.png",
+  description: "",
+  app: App.find_by_name("Zapier")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229460/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.22.39.png",
+  description: "",
+  app: App.find_by_name("Zapier")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229460/screenshots_show_page/automation/Screen_Shot_2018-09-05_at_15.21.59.png",
+  description: "",
+  app: App.find_by_name("Zapier")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229589/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.09.29.png",
+  description: "",
+  app: App.find_by_name("Calltoidea")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229589/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.09.04.png",
+  description: "",
+  app: App.find_by_name("Calltoidea")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229589/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.08.41.png",
+  description: "",
+  app: App.find_by_name("Calltoidea")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229691/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.34.49.png",
+  description: "",
+  app: App.find_by_name("Canva")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229691/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.36.02.png",
+  description: "",
+  app: App.find_by_name("Canva")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229691/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.35.08.png",
+  description: "",
+  app: App.find_by_name("Canva")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229761/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.13.09.png",
+  description: "",
+  app: App.find_by_name("Coolors")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229761/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.13.33.png",
+  description: "",
+  app: App.find_by_name("Coolors")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229762/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.13.45.png",
+  description: "",
+  app: App.find_by_name("Coolors")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229866/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.16.07.png",
+  description: "",
+  app: App.find_by_name("Dribbble")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229866/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.15.27.png",
+  description: "",
+  app: App.find_by_name("Dribbble")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229866/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.15.41.png",
+  description: "",
+  app: App.find_by_name("Dribbble")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229929/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.31.39.png",
+  description: "",
+  app: App.find_by_name("Figma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229930/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.32.11.png",
+  description: "",
+  app: App.find_by_name("Figma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dqiosiccn/image/upload/v1536229930/screenshots_show_page/design/Screen_Shot_2018-09-05_at_16.32.03.png",
+  description: "",
+  app: App.find_by_name("Figma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231834/Design/Screen_Shot_2018-09-05_at_16.28.16.png",
+  description: "",
+  app: App.find_by_name("Flaticon")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231833/Design/Screen_Shot_2018-09-05_at_16.28.33.png",
+  description: "",
+  app: App.find_by_name("Flaticon")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231834/Design/Screen_Shot_2018-09-05_at_16.28.48.png",
+  description: "",
+  app: App.find_by_name("Flaticon")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231948/Design/Screen_Shot_2018-09-05_at_16.18.20.png",
+  description: "",
+  app: App.find_by_name("Font Squirrel")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231948/Design/Screen_Shot_2018-09-05_at_16.18.36.png",
+  description: "",
+  app: App.find_by_name("Font Squirrel")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536231949/Design/Screen_Shot_2018-09-05_at_16.17.58.png",
+  description: "",
+  app: App.find_by_name("Font Squirrel")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232001/Design/Screen_Shot_2018-09-05_at_16.37.00.png",
+  description: "",
+  app: App.find_by_name("genially")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232001/Design/Screen_Shot_2018-09-05_at_16.36.41.png",
+  description: "",
+  app: App.find_by_name("genially")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232001/Design/Screen_Shot_2018-09-05_at_16.36.52.png",
+  description: "",
+  app: App.find_by_name("genially")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232036/Design/Screen_Shot_2018-09-05_at_16.21.37.png",
+  description: "",
+  app: App.find_by_name("Google Fonts")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232036/Design/Screen_Shot_2018-09-05_at_16.21.21.png",
+  description: "",
+  app: App.find_by_name("Google Fonts")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232036/Design/Screen_Shot_2018-09-05_at_16.21.59.png",
+  description: "",
+  app: App.find_by_name("Google Fonts")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232083/Design/Screen_Shot_2018-09-05_at_16.26.03.png",
+  description: "",
+  app: App.find_by_name("Iconfinder")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232084/Design/Screen_Shot_2018-09-05_at_16.26.43.png",
+  description: "",
+  app: App.find_by_name("Iconfinder")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232083/Design/Screen_Shot_2018-09-05_at_16.26.27.png",
+  description: "",
+  app: App.find_by_name("Iconfinder")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232128/Design/Screen_Shot_2018-09-05_at_16.30.28.png",
+  description: "",
+  app: App.find_by_name("Ludus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232128/Design/Screen_Shot_2018-09-05_at_16.29.46.png",
+  description: "",
+  app: App.find_by_name("Ludus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232128/Design/Screen_Shot_2018-09-05_at_16.29.34.png",
+  description: "",
+  app: App.find_by_name("Ludus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232171/Design/Screen_Shot_2018-09-05_at_16.25.07.png",
+  description: "",
+  app: App.find_by_name("Material")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232172/Design/Screen_Shot_2018-09-05_at_16.24.56.png",
+  description: "",
+  app: App.find_by_name("Material")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232172/Design/Screen_Shot_2018-09-05_at_16.24.22.png",
+  description: "",
+  app: App.find_by_name("Material")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232215/Design/Screen_Shot_2018-09-05_at_16.16.49.png",
+  description: "",
+  app: App.find_by_name("Materialize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232215/Design/Screen_Shot_2018-09-05_at_16.17.11.png",
+  description: "",
+  app: App.find_by_name("Materialize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232215/Design/Screen_Shot_2018-09-05_at_16.17.11.png",
+  description: "",
+  app: App.find_by_name("Materialize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232252/Design/Screen_Shot_2018-09-05_at_16.20.40.png",
+  description: "",
+  app: App.find_by_name("Muzli")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232251/Design/Screen_Shot_2018-09-05_at_16.19.40.png",
+  description: "",
+  app: App.find_by_name("Muzli")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232252/Design/Screen_Shot_2018-09-05_at_16.19.56.png",
+  description: "",
+  app: App.find_by_name("Muzli")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232299/Design/Screen_Shot_2018-09-05_at_16.07.15.png",
+  description: "",
+  app: App.find_by_name("Sketchboard")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232299/Design/Screen_Shot_2018-09-05_at_16.07.29.png",
+  description: "",
+  app: App.find_by_name("Sketchboard")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232300/Design/Screen_Shot_2018-09-05_at_16.07.57.png",
+  description: "",
+  app: App.find_by_name("Sketchboard")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232356/Design/Screen_Shot_2018-09-05_at_16.33.58.png",
+  description: "",
+  app: App.find_by_name("stickpng")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232357/Design/Screen_Shot_2018-09-05_at_16.33.43.png",
+  description: "",
+  app: App.find_by_name("stickpng")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232357/Design/Screen_Shot_2018-09-05_at_16.33.43.png",
+  description: "",
+  app: App.find_by_name("stickpng")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232439/Design/Screen_Shot_2018-09-05_at_16.14.25.png",
+  description: "",
+  app: App.find_by_name("The Noun Project")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232439/Design/Screen_Shot_2018-09-05_at_16.14.48.png",
+  description: "",
+  app: App.find_by_name("The Noun Project")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232439/Design/Screen_Shot_2018-09-05_at_16.14.37.png",
+  description: "",
+  app: App.find_by_name("The Noun Project")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232520/Design/Screen_Shot_2018-09-05_at_16.11.50.png",
+  description: "",
+  app: App.find_by_name("uiGradients")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232520/Design/Screen_Shot_2018-09-05_at_16.12.11.png",
+  description: "",
+  app: App.find_by_name("uiGradients")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232520/Design/Screen_Shot_2018-09-05_at_16.10.34.png",
+  description: "",
+  app: App.find_by_name("uiGradients")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232717/Design/Screen_Shot_2018-09-05_at_17.35.21.png",
+  description: "",
+  app: App.find_by_name("Codepen")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232717/Design/Screen_Shot_2018-09-05_at_17.35.49.png",
+  description: "",
+  app: App.find_by_name("Codepen")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232717/Design/Screen_Shot_2018-09-05_at_17.35.09.png",
+  description: "",
+  app: App.find_by_name("Codepen")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232773/Finance/Screen_Shot_2018-09-05_at_16.49.05.png",
+  description: "",
+  app: App.find_by_name("float")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232773/Finance/Screen_Shot_2018-09-05_at_16.48.55.png",
+  description: "",
+  app: App.find_by_name("float")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232774/Finance/Screen_Shot_2018-09-05_at_16.49.20.png",
+  description: "",
+  app: App.find_by_name("float")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232812/Finance/Screen_Shot_2018-09-05_at_16.51.00.png",
+  description: "",
+  app: App.find_by_name("InvoiceBerry")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232812/Finance/Screen_Shot_2018-09-05_at_16.51.12.png",
+  description: "",
+  app: App.find_by_name("InvoiceBerry")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232812/Finance/Screen_Shot_2018-09-05_at_16.51.24.png",
+  description: "",
+  app: App.find_by_name("InvoiceBerry")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232857/Finance/Screen_Shot_2018-09-05_at_16.54.35.png",
+  description: "",
+  app: App.find_by_name("IPaidThat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232857/Finance/Screen_Shot_2018-09-05_at_16.55.07.png",
+  description: "",
+  app: App.find_by_name("IPaidThat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232857/Finance/Screen_Shot_2018-09-05_at_16.54.24.png",
+  description: "",
+  app: App.find_by_name("IPaidThat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232898/Finance/Screen_Shot_2018-09-05_at_16.56.52.png",
+  description: "",
+  app: App.find_by_name("Monaize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232898/Finance/Screen_Shot_2018-09-05_at_16.56.44.png",
+  description: "",
+  app: App.find_by_name("Monaize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232903/Finance/Screen_Shot_2018-09-05_at_16.57.07.png",
+  description: "",
+  app: App.find_by_name("Monaize")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232931/Finance/Screen_Shot_2018-09-05_at_16.50.19.png",
+  description: "",
+  app: App.find_by_name("Octobat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232932/Finance/Screen_Shot_2018-09-05_at_16.50.08.png",
+  description: "",
+  app: App.find_by_name("Octobat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536232932/Finance/Screen_Shot_2018-09-05_at_16.50.27.png",
+  description: "",
+  app: App.find_by_name("Octobat")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233016/Finance/Screen_Shot_2018-09-05_at_16.58.09.png",
+  description: "",
+  app: App.find_by_name("PayFit")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233016/Finance/Screen_Shot_2018-09-05_at_16.58.01.png",
+  description: "",
+  app: App.find_by_name("PayFit")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233016/Finance/Screen_Shot_2018-09-05_at_16.57.52.png",
+  description: "",
+  app: App.find_by_name("PayFit")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233113/Finance/Screen_Shot_2018-09-05_at_16.55.48.png",
+  description: "",
+  app: App.find_by_name("Qonto")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233113/Finance/Screen_Shot_2018-09-05_at_16.55.37.png",
+  description: "",
+  app: App.find_by_name("Qonto")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233113/Finance/Screen_Shot_2018-09-05_at_16.55.37.png",
+  description: "",
+  app: App.find_by_name("Qonto")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233258/Finance/Screen_Shot_2018-09-05_at_16.53.02.png",
+  description: "",
+  app: App.find_by_name("QuickBooks")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233258/Finance/Screen_Shot_2018-09-05_at_16.52.44.png",
+  description: "",
+  app: App.find_by_name("QuickBooks")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233258/Finance/Screen_Shot_2018-09-05_at_16.53.21.png",
+  description: "",
+  app: App.find_by_name("QuickBooks")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233296/Finance/Screen_Shot_2018-09-05_at_16.47.21.png",
+  description: "",
+  app: App.find_by_name("Runway")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233296/Finance/Screen_Shot_2018-09-05_at_16.47.36.png",
+  description: "",
+  app: App.find_by_name("Runway")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233296/Finance/Screen_Shot_2018-09-05_at_16.48.06.png",
+  description: "",
+  app: App.find_by_name("Runway")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233334/Finance/Screen_Shot_2018-09-05_at_16.59.04.png",
+  description: "",
+  app: App.find_by_name("Stripe")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233334/Finance/Screen_Shot_2018-09-05_at_16.59.27.png",
+  description: "",
+  app: App.find_by_name("Stripe")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233334/Finance/Screen_Shot_2018-09-05_at_16.59.18.png",
+  description: "",
+  app: App.find_by_name("Stripe")
+)
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233403/Job%20Boards/Screen_Shot_2018-09-05_at_17.01.38.png",
+  description: "",
+  app: App.find_by_name("Fiverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233403/Job%20Boards/Screen_Shot_2018-09-05_at_17.01.27.png",
+  description: "",
+  app: App.find_by_name("Fiverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233403/Job%20Boards/Screen_Shot_2018-09-05_at_17.01.56.png",
+  description: "",
+  app: App.find_by_name("Fiverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233513/Job%20Boards/Screen_Shot_2018-09-05_at_17.02.38.png",
+  description: "",
+  app: App.find_by_name("Guru")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233513/Job%20Boards/Screen_Shot_2018-09-05_at_17.02.59.png",
+  description: "",
+  app: App.find_by_name("Guru")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233514/Job%20Boards/Screen_Shot_2018-09-05_at_17.02.30.png",
+  description: "",
+  app: App.find_by_name("Guru")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233555/Legal/Screen_Shot_2018-09-05_at_16.38.38.png",
+  description: "",
+  app: App.find_by_name("Bonsai")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233555/Legal/Screen_Shot_2018-09-05_at_16.38.46.png",
+  description: "",
+  app: App.find_by_name("Bonsai")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233555/Legal/Screen_Shot_2018-09-05_at_16.38.56.png",
+  description: "",
+  app: App.find_by_name("Bonsai")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233590/Legal/Screen_Shot_2018-09-05_at_16.40.38.png",
+  description: "",
+  app: App.find_by_name("Docracy")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233590/Legal/Screen_Shot_2018-09-05_at_16.41.02.png",
+  description: "",
+  app: App.find_by_name("Docracy")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233591/Legal/Screen_Shot_2018-09-05_at_16.41.43.png",
+  description: "",
+  app: App.find_by_name("Docracy")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233629/Legal/Screen_Shot_2018-09-05_at_16.42.26.png",
+  description: "",
+  app: App.find_by_name("DocuSign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233630/Legal/Screen_Shot_2018-09-05_at_16.42.17.png",
+  description: "",
+  app: App.find_by_name("DocuSign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233630/Legal/Screen_Shot_2018-09-05_at_16.42.32.png",
+  description: "",
+  app: App.find_by_name("DocuSign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233671/Legal/Screen_Shot_2018-09-05_at_16.39.36.png",
+  description: "",
+  app: App.find_by_name("iubenda")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233671/Legal/Screen_Shot_2018-09-05_at_16.40.03.png",
+  description: "",
+  app: App.find_by_name("iubenda")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233671/Legal/Screen_Shot_2018-09-05_at_16.39.54.png",
+  description: "",
+  app: App.find_by_name("iubenda")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233721/Legal/Screen_Shot_2018-09-05_at_16.43.21.png",
+  description: "",
+  app: App.find_by_name("made in law")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233721/Legal/Screen_Shot_2018-09-05_at_16.43.09.png",
+  description: "",
+  app: App.find_by_name("made in law")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233721/Legal/Screen_Shot_2018-09-05_at_16.43.49.png",
+  description: "",
+  app: App.find_by_name("made in law")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233816/Marketing/Screen_Shot_2018-09-05_at_15.37.00.png",
+  description: "",
+  app: App.find_by_name("ActiveCampaign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233817/Marketing/Screen_Shot_2018-09-05_at_15.37.26.png",
+  description: "",
+  app: App.find_by_name("ActiveCampaign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233817/Marketing/Screen_Shot_2018-09-05_at_15.38.30.png",
+  description: "",
+  app: App.find_by_name("ActiveCampaign")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233855/Marketing/Screen_Shot_2018-09-05_at_15.53.47.png",
+  description: "",
+  app: App.find_by_name("autopilot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233855/Marketing/Screen_Shot_2018-09-05_at_15.54.01.png",
+  description: "",
+  app: App.find_by_name("autopilot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536233855/Marketing/Screen_Shot_2018-09-05_at_15.54.13.png",
+  description: "",
+  app: App.find_by_name("autopilot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234003/Marketing/Screen_Shot_2018-09-05_at_15.48.32.png",
+  description: "",
+  app: App.find_by_name("Customer.io")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234004/Marketing/Screen_Shot_2018-09-05_at_15.49.25.png",
+  description: "",
+  app: App.find_by_name("Customer.io")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234004/Marketing/Screen_Shot_2018-09-05_at_15.49.54.png",
+  description: "",
+  app: App.find_by_name("Customer.io")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234050/Marketing/Screen_Shot_2018-09-05_at_15.51.11.png",
+  description: "",
+  app: App.find_by_name("Hubspot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234050/Marketing/Screen_Shot_2018-09-05_at_15.50.51.png",
+  description: "",
+  app: App.find_by_name("Hubspot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234050/Marketing/Screen_Shot_2018-09-05_at_15.51.23.png",
+  description: "",
+  app: App.find_by_name("Hubspot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234086/Marketing/Screen_Shot_2018-09-05_at_15.41.10.png",
+  description: "",
+  app: App.find_by_name("Infusionsoft")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234086/Marketing/Screen_Shot_2018-09-05_at_15.41.26.png",
+  description: "",
+  app: App.find_by_name("Infusionsoft")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234086/Marketing/Screen_Shot_2018-09-05_at_15.40.52.png",
+  description: "",
+  app: App.find_by_name("Infusionsoft")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234119/Marketing/Screen_Shot_2018-09-05_at_15.52.23.png",
+  description: "",
+  app: App.find_by_name("MailChimp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234119/Marketing/Screen_Shot_2018-09-05_at_15.52.57.png",
+  description: "",
+  app: App.find_by_name("MailChimp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234119/Marketing/Screen_Shot_2018-09-05_at_15.52.05.png",
+  description: "",
+  app: App.find_by_name("MailChimp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234150/Marketing/Screen_Shot_2018-09-05_at_15.45.46.png",
+  description: "",
+  app: App.find_by_name("Marin Software")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234150/Marketing/Screen_Shot_2018-09-05_at_15.45.17.png",
+  description: "",
+  app: App.find_by_name("Marin Software")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234151/Marketing/Screen_Shot_2018-09-05_at_15.45.05.png",
+  description: "",
+  app: App.find_by_name("Marin Software")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234183/Marketing/Screen_Shot_2018-09-05_at_15.46.38.png",
+  description: "",
+  app: App.find_by_name("Marketo")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234183/Marketing/Screen_Shot_2018-09-05_at_15.46.58.png",
+  description: "",
+  app: App.find_by_name("Marketo")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234184/Marketing/Screen_Shot_2018-09-05_at_15.47.17.png",
+  description: "",
+  app: App.find_by_name("Marketo")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234209/Marketing/Screen_Shot_2018-09-05_at_15.35.31.png",
+  description: "",
+  app: App.find_by_name("Ontraport")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234209/Marketing/Screen_Shot_2018-09-05_at_15.36.01.png",
+  description: "",
+  app: App.find_by_name("Ontraport")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234215/Marketing/Screen_Shot_2018-09-05_at_15.35.08.png",
+  description: "",
+  app: App.find_by_name("Ontraport")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234243/Marketing/Screen_Shot_2018-09-05_at_15.42.44.png",
+  description: "",
+  app: App.find_by_name("Pardot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234243/Marketing/Screen_Shot_2018-09-05_at_15.42.27.png",
+  description: "",
+  app: App.find_by_name("Pardot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234243/Marketing/Screen_Shot_2018-09-05_at_15.42.56.png",
+  description: "",
+  app: App.find_by_name("Pardot")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234270/Marketing/Screen_Shot_2018-09-05_at_15.34.38.png",
+  description: "",
+  app: App.find_by_name("Pipedrive")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234271/Marketing/Screen_Shot_2018-09-05_at_15.33.49.png",
+  description: "",
+  app: App.find_by_name("Pipedrive")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234271/Marketing/Screen_Shot_2018-09-05_at_15.34.07.png",
+  description: "",
+  app: App.find_by_name("Pipedrive")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234395/Marketing/Screen_Shot_2018-09-05_at_15.39.46.png",
+  description: "",
+  app: App.find_by_name("Renderforest")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234395/Marketing/Screen_Shot_2018-09-05_at_15.39.14.png",
+  description: "",
+  app: App.find_by_name("Renderforest")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234395/Marketing/Screen_Shot_2018-09-05_at_15.39.28.png",
+  description: "",
+  app: App.find_by_name("Renderforest")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234446/Marketing/Screen_Shot_2018-09-05_at_15.43.39.png",
+  description: "",
+  app: App.find_by_name("Vocus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234447/Marketing/Screen_Shot_2018-09-05_at_15.43.52.png",
+  description: "",
+  app: App.find_by_name("Vocus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234447/Marketing/Screen_Shot_2018-09-05_at_15.44.07.png",
+  description: "",
+  app: App.find_by_name("Vocus")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234497/Photography/Screen_Shot_2018-09-05_at_17.28.06.png",
+  description: "",
+  app: App.find_by_name("Artboard Studio")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234497/Photography/Screen_Shot_2018-09-05_at_17.26.46.png",
+  description: "",
+  app: App.find_by_name("Artboard Studio")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234497/Photography/Screen_Shot_2018-09-05_at_17.26.38.png",
+  description: "",
+  app: App.find_by_name("Artboard Studio")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234532/Photography/Screen_Shot_2018-09-05_at_17.26.08.png",
+  description: "",
+  app: App.find_by_name("Burst")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234532/Photography/Screen_Shot_2018-09-05_at_17.24.52.png",
+  description: "",
+  app: App.find_by_name("Burst")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234533/Photography/Screen_Shot_2018-09-05_at_17.25.17.png",
+  description: "",
+  app: App.find_by_name("Burst")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234566/Photography/Screen_Shot_2018-09-05_at_17.20.45.png",
+  description: "",
+  app: App.find_by_name("Coverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234567/Photography/Screen_Shot_2018-09-05_at_17.21.11.png",
+  description: "",
+  app: App.find_by_name("Coverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234567/Photography/Screen_Shot_2018-09-05_at_17.20.31.png",
+  description: "",
+  app: App.find_by_name("Coverr")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234613/Photography/Screen_Shot_2018-09-05_at_17.29.22.png",
+  description: "",
+  app: App.find_by_name("Google Photos")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234614/Photography/Screen_Shot_2018-09-05_at_17.28.53.png",
+  description: "",
+  app: App.find_by_name("Google Photos")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234614/Photography/Screen_Shot_2018-09-05_at_17.29.08.png",
+  description: "",
+  app: App.find_by_name("Google Photos")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234648/Photography/Screen_Shot_2018-09-05_at_17.05.31.png",
+  description: "",
+  app: App.find_by_name("Instagram")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234648/Photography/Screen_Shot_2018-09-05_at_17.05.15.png",
+  description: "",
+  app: App.find_by_name("Instagram")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234678/Photography/Screen_Shot_2018-09-05_at_17.33.43.png",
+  description: "",
+  app: App.find_by_name("Makerbook")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234678/Photography/Screen_Shot_2018-09-05_at_17.33.52.png",
+  description: "",
+  app: App.find_by_name("Makerbook")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234679/Photography/Screen_Shot_2018-09-05_at_17.34.13.png",
+  description: "",
+  app: App.find_by_name("Makerbook")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234733/Photography/Screen_Shot_2018-09-05_at_17.22.31.png",
+  description: "",
+  app: App.find_by_name("Pexels")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234733/Photography/Screen_Shot_2018-09-05_at_17.22.41.png",
+  description: "",
+  app: App.find_by_name("Pexels")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234734/Photography/Screen_Shot_2018-09-05_at_17.22.08.png",
+  description: "",
+  app: App.find_by_name("Pexels")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234769/Photography/Screen_Shot_2018-09-05_at_17.23.56.png",
+  description: "",
+  app: App.find_by_name("Pixabay")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234770/Photography/Screen_Shot_2018-09-05_at_17.24.22.png",
+  description: "",
+  app: App.find_by_name("Pixabay")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234771/Photography/Screen_Shot_2018-09-05_at_17.24.09.png",
+  description: "",
+  app: App.find_by_name("Pixabay")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234808/Photography/Screen_Shot_2018-09-05_at_17.32.02.png",
+  description: "",
+  app: App.find_by_name("Prisma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234808/Photography/Screen_Shot_2018-09-05_at_17.32.48.png",
+  description: "",
+  app: App.find_by_name("Prisma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234809/Photography/Screen_Shot_2018-09-05_at_17.32.12.png",
+  description: "",
+  app: App.find_by_name("Prisma")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234847/Photography/Screen_Shot_2018-09-05_at_17.04.38.png",
+  description: "",
+  app: App.find_by_name("Stocksnap")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234847/Photography/Screen_Shot_2018-09-05_at_17.04.23.png",
+  description: "",
+  app: App.find_by_name("Stocksnap")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234848/Photography/Screen_Shot_2018-09-05_at_17.04.06.png",
+  description: "",
+  app: App.find_by_name("Stocksnap")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234884/Photography/Screen_Shot_2018-09-05_at_17.31.14.png",
+  description: "",
+  app: App.find_by_name("Unsplash")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234885/Photography/Screen_Shot_2018-09-05_at_17.31.06.png",
+  description: "",
+  app: App.find_by_name("Unsplash")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234886/Photography/Screen_Shot_2018-09-05_at_17.30.48.png",
+  description: "",
+  app: App.find_by_name("Unsplash")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234937/Photography/Screen_Shot_2018-09-05_at_14.58.33.png",
+  description: "",
+  app: App.find_by_name("Basecamp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234937/Photography/Screen_Shot_2018-09-05_at_14.59.32.png",
+  description: "",
+  app: App.find_by_name("Basecamp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234937/Photography/Screen_Shot_2018-09-05_at_14.59.48.png",
+  description: "",
+  app: App.find_by_name("Basecamp")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234964/Photography/Screen_Shot_2018-09-05_at_15.15.24.png",
+  description: "",
+  app: App.find_by_name("Google Mail")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234964/Photography/Screen_Shot_2018-09-05_at_15.15.58.png",
+  description: "",
+  app: App.find_by_name("Google Mail")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234965/Photography/Screen_Shot_2018-09-05_at_15.14.57.png",
+  description: "",
+  app: App.find_by_name("Google Mail")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234989/Photography/Screen_Shot_2018-09-05_at_14.54.28.png",
+  description: "",
+  app: App.find_by_name("Slack")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234989/Photography/Screen_Shot_2018-09-05_at_14.57.11.png",
+  description: "",
+  app: App.find_by_name("Slack")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536234989/Photography/Screen_Shot_2018-09-05_at_14.57.50.png",
+  description: "",
+  app: App.find_by_name("Slack")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536235012/Photography/Screen_Shot_2018-09-05_at_15.13.40.png",
+  description: "",
+  app: App.find_by_name("todoist")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536235013/Photography/Screen_Shot_2018-09-05_at_15.11.45.png",
+  description: "",
+  app: App.find_by_name("todoist")
+)
+
+AppScreen.create!(
+  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536235013/Photography/Screen_Shot_2018-09-05_at_15.11.10.png",
+  description: "",
+  app: App.find_by_name("todoist")
+)
