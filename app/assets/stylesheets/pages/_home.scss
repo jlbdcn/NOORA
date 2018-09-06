@@ -44,30 +44,30 @@
 }
 
 .value {
-  height: 1200px;
+  height: 825px;
   background-size: cover;
   h2 {
     color: white;
     position: relative;
-    top: 180px;
+    top: 130px;
     text-align: center;
   }
 }
 
 .grid {
-    display: grid;
-    position: relative;
-    top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 75%;
-    width: 50%;
+  display: grid;
+  position: relative;
+  top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75vh;
+  width: 65%;
   margin-top: 25px;
   margin-bottom: 25px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  min-height: 0;  /* NEW */
-  min-width: 0;   /* NEW; needed for Firefox */
+  min-height: 0;
+  min-width: 0; /* NEW; needed for Firefox */
 }
 
 .box{
@@ -83,7 +83,7 @@
   height: 40%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size:35%;
+  background-size:15%;
 }
 
 .one {
@@ -113,7 +113,7 @@
   .value-text__strong{
     font-weight: 700;
     font-size: 24px;
-    line-height: 75px;
+    line-height: 40px;
   }
 
 }
