@@ -28,7 +28,7 @@
       <% end %>
         <li class="sidebar__home">
           <%= link_to apps_path do %>
-             <%= image_tag '', class: "sidebar-icon sidebar-icon-hover" %><%= image_tag '', class: "sidebar-icon sidebar-icon-no-hover" %></i><span class="sidebar__category-name">Home</span>
+             <%= image_tag 'category-icons/icon-home-on.png', class: "sidebar-icon sidebar-icon-hover" %><%= image_tag 'category-icons/icon-home-off.png', class: "sidebar-icon sidebar-icon-no-hover" %></i><span class="sidebar__category-name">Home</span>
           <% end %>
         </li>
       <% Category.all.each do |category| %>

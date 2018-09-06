@@ -23,6 +23,11 @@
     color: white;
     box-shadow: 1px 1px 24px -5px rgba(0,0,0,0.38);
   }
+
+  &:focus {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .button:active {
