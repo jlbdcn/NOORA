@@ -1,41 +1,33 @@
 <div class="main-container">
   <div class="sidebar-container"></div>
-    <div class="container">
-
-<div class="features">
-  <div class="grid-features">
-
-
-      <div class="box-features one-b">
-        <%= link_to app_path(App.find_by_name("Slack")) do %>
-          <div class="box-features__main" style="background-image: linear-gradient(to top, #ffffff, transparent), url('<%= asset_path "featura-photo.png"%>');">
-            <p class="h4">App of the week</p>
+  <div class="container">
+    <% if @featured %>
+      <div class="features">
+        <div class="grid-features">
+          <div class="box-features one-b">
+            <%= link_to app_path(App.find_by_name("Slack")) do %>
+              <div class="box-features__main" style="background-image: linear-gradient(to top, #ffffff, transparent), url('<%= asset_path "featura-photo.png"%>');">
+                <p class="h4">App of the week</p>
+              </div>
+            <% end %>
           </div>
-        <% end %>
-      </div>
-
-      <div class="box-features two-b">
-        <%= link_to "http://news.cremedelacreme.io/freelance-best-skills-working-freelancer-remote-student-univeristy/", target: "_blank" do %>
-          <div class=" box-features__main " style="background-image: linear-gradient(to top, #ffffff, transparent), url('http://news.cremedelacreme.io/content/images/2017/05/image-134.png');">
-            <p class="h4"> [Article] 5 skills to developp as a freelance </p>
+          <div class="box-features two-b">
+            <%= link_to "http://news.cremedelacreme.io/freelance-best-skills-working-freelancer-remote-student-univeristy/", target: "_blank" do %>
+              <div class=" box-features__main " style="background-image: linear-gradient(to top, #ffffff, transparent), url('http://news.cremedelacreme.io/content/images/2017/05/image-134.png');">
+                <p class="h4"> [Article] 5 skills to developp as a freelance </p>
+              </div>
+            <% end %>
           </div>
-        <% end %>
-      </div>
-
-      <div class="box-features three-b">
-        <%= link_to "http://news.cremedelacreme.io/best-freelancing-vs-part-time-job/", target: "_blank" do %>
-          <div class=" box-features__main " style="background-image: linear-gradient(to top, #ffffff, transparent), url('http://news.cremedelacreme.io/content/images/2018/01/muhammad-raufan-yusup-254422-1.jpg');">
-            <p class="h4"> [Article] Freelancing vs Part-time job </p>
+          <div class="box-features three-b">
+            <%= link_to "http://news.cremedelacreme.io/best-freelancing-vs-part-time-job/", target: "_blank" do %>
+              <div class=" box-features__main " style="background-image: linear-gradient(to top, #ffffff, transparent), url('http://news.cremedelacreme.io/content/images/2018/01/muhammad-raufan-yusup-254422-1.jpg');">
+                <p class="h4"> [Article] Freelancing vs Part-time job </p>
+              </div>
+            <% end %>
           </div>
-        <% end %>
+        </div>
       </div>
-
-
-  </div>
-
-
-
-</div>
+    <% end %>
 
 
 
