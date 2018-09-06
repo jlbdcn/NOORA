@@ -14,7 +14,7 @@ module GetGoogleAuthUrl
       scope: "https://www.googleapis.com/auth/gmail.readonly",
       response_type: "code",
       access_type: "offline",
-      redirect_uri: 'https://www.noora.app/google_oauth2/callback',
+      redirect_uri:  ENV["GOOGLE_REDIRECT"],
       include_grant_scope: true
     )
 
