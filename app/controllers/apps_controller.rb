@@ -2,6 +2,16 @@ class AppsController < ApplicationController
   before_action :set_app, only: [:show]
   skip_before_action :authenticate_user!, only: [:index, :show, :shared_apps]
 
+  def new
+    @new_app = App.new
+  end
+
+  def create
+    new_app = App.new(app_params)
+    new_app.save
+    redirect_to apps_path
+  end
+
   def index
     @featured = false
     if params[:category].present?
