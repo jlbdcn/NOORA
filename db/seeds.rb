@@ -180,7 +180,7 @@ App.create!(
   name: "QuickBooks",
   description: "QuickBooks automates standard bookkeeping tasks such as entering transactions, performing calculations, and organizing data to keep your books balanced.",
   remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134799/new%20logos/quickbooks.png",
-  webpage_url: "https://quickbooks.intuit.com/oicms/t/qbks-1",
+  webpage_url: "https://quickbooks.intuit.com/",
   category: finance
 )
 
