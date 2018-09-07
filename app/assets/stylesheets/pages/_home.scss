@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: flex-start;
   align-content: center;
-  width:30%;
+  width:35%;
   //cancel the marge of the text
   h1{
     margin: 0px !important;
@@ -39,8 +39,9 @@
 #mock {
   height: 650px;
   position: relative;
-  left: 174px;
-  top: 20px;
+  left: 86px;
+  top: 0px;
+  overflow: inherit;
 }
 
 .value {
