@@ -10,8 +10,6 @@
 Review.delete_all
 AppScreen.delete_all
 Bookmark.delete_all
-Review.delete_all
-User.delete_all
 App.delete_all
 Category.delete_all
 
@@ -81,8 +79,10 @@ App.create!(
 
 App.create!(
   name: "Trello",
-  description: "Trello lets you work more collaboratively and get more done. Trello’s boards, lists, and cards enable you to organize and prioritize your projects in a fun, flexible and rewarding way.",
-  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536134813/new%20logos/trello.png",
+  description: "Trello is a collaboration tool that organizes your projects into boards. In one glance, Trello tells you what's being worked on, who's working on what, and where something is in a process.
+
+Imagine a white board, filled with lists of sticky notes, with each note as a task for you and your team. Now imagine that each of those sticky notes has photos, attachments from other data sources like BitBucket or Salesforce, documents, and a place to comment and collaborate with your teammates. Now imagine that you can take that whiteboard anywhere you go on your smartphone, and can access it from any computer through the web. That's Trello!",
+  remote_logo_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536079057/uaqwemhyzo1g9vggzrke.png",
   webpage_url: "https://trello.com/",
   category: project_management
 )
@@ -687,19 +687,19 @@ AppScreen.create!(
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242625/Screen_Shot_2018-09-05_at_15.09.18.png",
+  remote_url_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536320401/Trello_Screen_1.png",
   description: "",
   app: App.find_by_name("Trello")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242626/Screen_Shot_2018-09-05_at_15.09.55.png",
+  remote_url_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536320408/Trello_Screen.png",
   description: "",
   app: App.find_by_name("Trello")
 )
 
 AppScreen.create!(
-  remote_url_url: "https://res.cloudinary.com/dturke38u/image/upload/v1536242626/Screen_Shot_2018-09-05_at_15.09.35.png",
+  remote_url_url: "https://res.cloudinary.com/dczyseu80/image/upload/v1536320404/Trello_Screen_2.png",
   description: "",
   app: App.find_by_name("Trello")
 )
