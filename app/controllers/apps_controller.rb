@@ -3,13 +3,18 @@ class AppsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show, :shared_apps]
 
   def new
-    @new_app = App.new
+    @app = App.new
+    @categories = Category.all.map { |c| [c.name, c.id] }
   end
 
   def create
-    new_app = App.new(app_params)
-    new_app.save
-    redirect_to apps_path
+    @app = App.new(app_params)
+    if @app.save
+      redirect_to apps_path
+    else
+      @categories = Category.all.map { |c| [c.name, c.id] }
+      render :new
+    end
   end
 
   def index
@@ -68,7 +73,7 @@ class AppsController < ApplicationController
   private
 
   def app_params
-    params.require(:app).permit(:name, :description, :logo, :webpage_url)
+    params.require(:app).permit(:name, :description, :logo, :webpage_url, :category_id)
   end
 
   def set_app
