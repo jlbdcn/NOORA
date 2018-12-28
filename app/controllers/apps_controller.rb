@@ -4,7 +4,7 @@ class AppsController < ApplicationController
 
   def new
     @app = App.new
-    @categories = Category.all.map { |c| [c.name, c.id] }
+    @categories = categories_collection
   end
 
   def create
@@ -12,7 +12,7 @@ class AppsController < ApplicationController
     if @app.save
       redirect_to apps_path
     else
-      @categories = Category.all.map { |c| [c.name, c.id] }
+      @categories = categories_collection
       render :new
     end
   end
@@ -78,6 +78,10 @@ class AppsController < ApplicationController
 
   def set_app
     @app = App.find(params[:id])
+  end
+
+  def categories_collection
+    Category.all.map { |c| [c.name, c.id] }
   end
 
 end
