@@ -23,6 +23,8 @@ gem 'pg_search'
 gem 'oauth2'
 gem 'httparty'
 
+gem 'omniauth-facebook'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

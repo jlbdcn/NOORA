@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   mount ForestLiana::Engine => '/forest'
-  devise_for :users
+
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+
   root to: 'pages#home'
+
   get '/apps/favorite', to: 'apps#favorite', as: 'favorite_apps'
   get '/apps/shared/:public_token', to: 'apps#shared_apps'
   get '/bookmarks/create_multiple', to: 'bookmarks#create_multiple', as: 'create_multiple_bookmarks'
