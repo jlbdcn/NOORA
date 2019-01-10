@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
   root to: 'pages#home'
+  get 'privacy_policy', to: 'pages#privacy_policy', as: 'privacy_policy'
 
   get '/apps/favorite', to: 'apps#favorite', as: 'favorite_apps'
   get '/apps/shared/:public_token', to: 'apps#shared_apps'
